@@ -23,7 +23,7 @@ opfor_at = "O_Soldier_AT_F";                                            // AT Sp
 opfor_aa = "O_Soldier_AA_F";                                            // AA Specialist
 opfor_medic = "O_medic_F";                                              // Combat Life Saver
 opfor_engineer = "O_engineer_F";                                        // Engineer
-opfor_paratrooper = "O_soldier_PG_F";                                   // Paratrooper
+opfor_paratrooper = "O_R_recon_GL_F";                                   // Paratrooper
 
 // Enemy vehicles used by secondary objectives.
 opfor_mrap = "O_MRAP_02_F";                                             // Ifrit
@@ -43,20 +43,21 @@ Therefore, adding the same value twice or three times means they are more likely
 /* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders.
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 militia_squad = [
-    "O_soldierU_F",                                                     // Rifleman (Lite)
-    "O_soldierU_F",                                                     // Rifleman (Lite)
-    "O_soldierU_F",                                                     // Rifleman
-    "O_soldierU_F",                                                     // Rifleman
-    "O_soldierU_LAT_F",                                                 // Rifleman (AT)
-    "O_soldierU_AR_F",                                                  // Autorifleman
-    "O_soldierU_M_F",                                                   // Marksman
-    "O_soldierU_medic_F",                                               // Medic
-    "O_engineer_U_F"                                                    // Engineer
+    "O_Tura_deserter_lxWS",                                                     // Rifleman (Lite)
+    "O_Tura_defector_lxWS",                                                     // Rifleman (Lite)
+    "O_Tura_enforcer_lxWS",                                                     // Rifleman
+    "O_Tura_watcher_lxWS",                                                     // Rifleman
+    "O_Tura_hireling_lxWS",                                                 // Rifleman (AT)
+    "O_Tura_HeavyGunner_lxWS",                                                  // Autorifleman
+    "O_Tura_scout_lxWS",                                                   // Marksman
+    "O_Tura_medic2_lxWS",                                               // Medic
+    "O_Tura_thug_lxWS"                                                    // Engineer
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 militia_vehicles = [
-    "O_LSV_02_armed_F"                                                  // Qilin (armed)
+    "O_LSV_02_armed_F",                                                  // Qilin (armed)
+	"O_Tura_Offroad_armor_armed_lxWS"									// Offroad (UP, HMG)
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
@@ -77,10 +78,13 @@ opfor_vehicles = [
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
-    "O_MRAP_02_hmg_F",                                                  // Ifrit (HMG)
+    "O_Tura_ZU23_lxWS",													// ZU-23
+	"O_Tura_Offroad_armor_armed_lxWS",									// Offroad (UP, HMG)
+	"O_MRAP_02_hmg_F",                                                  // Ifrit (HMG)
     "O_MRAP_02_hmg_F",                                                  // Ifrit (HMG)
     "O_LSV_02_AT_F",                                                    // Qilin (AT)
-    "O_APC_Wheeled_02_rcws_F",                                          // MSE-3 Marid
+    "O_APC_Wheeled_02_rcws_F",                                          // MSE-3 Marid (GMG)
+	"O_APC_Wheeled_02_hmg_lxWS",										// MSE-3 Marid (HMG)
     "O_APC_Tracked_02_cannon_F"                                         // BTR-K Kamysh
 ];
 
@@ -93,11 +97,11 @@ opfor_battlegroup_vehicles = [
     "O_Truck_03_transport_F",                                           // Tempest Transport
     "O_Truck_03_covered_F",                                             // Tempest Transport (Covered)
     "O_APC_Tracked_02_cannon_F",                                        // BTR-K Kamysh
-    "O_APC_Tracked_02_cannon_F",                                        // BTR-K Kamysh
+    "O_APC_Tracked_02_30mm_lxWS",                                       // BTR-K Iskatel
     "O_APC_Tracked_02_AA_F",                                            // ZSU-39 Tigris
     "O_APC_Tracked_02_AA_F",                                            // ZSU-39 Tigris
     "O_MBT_02_cannon_F",                                                // T-100 Varsuk
-    "O_MBT_02_cannon_F",                                                // T-100 Varsuk
+    "O_MBT_02_railgun_F",                                               // T-100 Futara
     "O_MBT_04_cannon_F",                                                // T-140 Angara
     "O_MBT_04_command_F",                                               // T-140K Angara
     "O_Heli_Light_02_dynamicLoadout_F",                                 // Po-30 Orca (Armed)
@@ -108,14 +112,18 @@ opfor_battlegroup_vehicles = [
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
-    "O_MRAP_02_hmg_F",                                                  // Ifrit (HMG)
+    "O_Tura_Offroad_armor_AT_lxWS",										// Offroad (UP, AT)
+	"O_Tura_Truck_02_aa_lxWS",											// Zamak (ZU-23)
+	"O_MRAP_02_hmg_F",                                                  // Ifrit (HMG)
     "O_MRAP_02_hmg_F",                                                  // Ifrit (HMG)
     "O_Truck_03_transport_F",                                           // Tempest Transport
-    "O_APC_Wheeled_02_rcws_F",                                          // MSE-3 Marid
+    "O_APC_Wheeled_02_rcws_F",                                          // MSE-3 Marid (GMG)
+	"O_APC_Wheeled_02_hmg_lxWS",                                         // MSE-3 Marid (HMG)
     "O_APC_Tracked_02_cannon_F",                                        // BTR-K Kamysh
     "O_APC_Tracked_02_AA_F",                                            // ZSU-39 Tigris
     "O_Heli_Light_02_dynamicLoadout_F",                                 // Po-30 Orca (Armed)
-    "O_Heli_Transport_04_bench_F"                                       // Mi-290 Taru (Bench)
+    "O_Heli_Transport_04_bench_F",                                       // Mi-290 Taru (Bench)
+	"O_T_VTOL_02_infantry_dynamicLoadout_F"                             // Y-32 Xi'an (Infantry)
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
@@ -125,14 +133,18 @@ opfor_troup_transports = [
     "O_Truck_03_covered_F",                                             // Tempest Transport (Covered)
     "O_APC_Wheeled_02_rcws_F",                                          // MSE-3 Marid
     "O_Heli_Transport_04_bench_F",                                      // Mi-290 Taru (Bench)
-    "O_Heli_Light_02_dynamicLoadout_F"                                  // Po-30 Orca (Armed)
+    "O_Heli_Light_02_dynamicLoadout_F",                                  // Po-30 Orca (Armed)
+	"O_T_VTOL_02_infantry_dynamicLoadout_F",                             // Y-32 Xi'an (Infantry)
+	"O_SFIA_Heli_EC_02_RF"												//RAI-360M Cougar
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
-    "O_Heli_Transport_04_bench_F",                                      // Mi-290 Taru (Bench)
+    "O_SFIA_Heli_EC_02_RF",												//RAI-360M Cougar
+	"O_Heli_Transport_04_bench_F",                                      // Mi-290 Taru (Bench)
     "O_Heli_Light_02_dynamicLoadout_F",                                 // Po-30 Orca (Armed)
-    "O_Heli_Attack_02_dynamicLoadout_F"                                 // Mi-48 Kajman
+    "O_Heli_Attack_02_dynamicLoadout_F",                                 // Mi-48 Kajman
+	"O_T_VTOL_02_infantry_dynamicLoadout_F"                             // Y-32 Xi'an (Infantry)
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
