@@ -1,14 +1,14 @@
-version=53;
+version=54;
 class EditorData
 {
 	moveGridStep=1;
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=513;
+	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=6426;
+		nextID=6829;
 	};
 	class MarkerIDProvider
 	{
@@ -16,17 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1006;
+		nextID=1060;
 	};
 	class Camera
 	{
-		pos[]={27405.098,69.24128,5272.2231};
-		dir[]={0.41673088,-0.42858419,0.80169684};
-		up[]={0.19768399,0.90348023,0.38030154};
-		aside[]={0.8873198,8.4613566e-007,-0.4612368};
+		pos[]={25840.086,40.242798,5771.5503};
+		dir[]={0.31759828,-0.17981991,0.93101889};
+		up[]={0.05805685,0.98369956,0.17018992};
+		aside[]={0.94644642,0,-0.32286108};
 	};
 };
 binarizationWanted=0;
+sourceName="kp_liberation";
 addons[]=
 {
 	"A3_Ui_F",
@@ -54,13 +55,23 @@ addons[]=
 	"A3_Structures_F_Ind_DieselPowerPlant",
 	"A3_Boat_F_Jets_Carrier_01",
 	"A3_Structures_F_System",
-	"A3_Structures_F_Mil_Flags"
+	"EF_LPD_C",
+	"EF_Props",
+	"A3_Structures_F_Orange_Humanitarian_Flags",
+	"A3_Boat_F_Destroyer_Destroyer_01",
+	"A3_Static_F_Destroyer_Ship_Gun_01",
+	"A3_Static_F_Destroyer_Ship_MRLS_01",
+	"A3_Static_F_Jets_SAM_System_02",
+	"A3_Static_F_Jets_AAA_System_01",
+	"A3_Static_F_Jets_SAM_System_01",
+	"EF_Static",
+	"EF_CombatBoat_C"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=17;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -124,7 +135,69 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item9
+		{
+			className="EF_LPD_C";
+			name="Expeditionary Forces - Landing Platform Dock (Encoding)";
+			author="Tiny Gecko Studios";
+			url="https://www.arma3.com";
+		};
+		class Item10
+		{
+			className="EF_Props";
+			name="Expeditionary Forces - Props";
+			author="Tiny Gecko Studios";
+			url="https://www.arma3.com";
+		};
+		class Item11
+		{
+			className="A3_Structures_F_Orange";
+			name="Arma 3 Orange - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item12
+		{
+			className="A3_Boat_F_Destroyer";
+			name="Arma 3 Jets - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item13
+		{
+			className="A3_Static_F_Destroyer";
+			name="CFGPATCHES_A3_Static_F_Destroyer";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item14
+		{
+			className="A3_Static_F_Jets";
+			name="Arma 3 Jets - Turrets";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item15
+		{
+			className="EF_Static";
+			name="Expeditionary Forces - Static Weapons";
+			author="Tiny Gecko Studios";
+			url="https://www.arma3.com";
+		};
+		class Item16
+		{
+			className="EF_CombatBoat_C";
+			name="Expeditionary Forces - Combat Boat (Encoding)";
+			author="Tiny Gecko Studios";
+			url="https://www.arma3.com";
+		};
 	};
+};
+dlcs[]=
+{
+	"Jets",
+	"ef",
+	"ORANGE"
 };
 randomSeed=7564349;
 class ScenarioData
@@ -154,13 +227,7 @@ class CustomAttributes
 			{
 				class data
 				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
+					singleType="SCALAR";
 					value=1;
 				};
 			};
@@ -193,7 +260,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=519;
+		items=540;
 		class Item0
 		{
 			dataType="Marker";
@@ -261,7 +328,7 @@ class Mission
 			name="zm1";
 			id=422;
 			type="ModuleCurator_F";
-			atlOffset=-9.5367432e-007;
+			atlOffset=-9.5367432e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -272,13 +339,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
+							singleType="STRING";
 							value="commandant";
 						};
 					};
@@ -291,13 +352,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
+							singleType="SCALAR";
 							value=0;
 						};
 					};
@@ -310,13 +365,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
+							singleType="STRING";
 							value="OVERLORD";
 						};
 					};
@@ -329,13 +378,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -348,13 +391,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
+							singleType="SCALAR";
 							value=0;
 						};
 					};
@@ -371,7 +408,7 @@ class Mission
 			};
 			id=423;
 			type="ModuleCuratorSetAttributesObject_F";
-			atlOffset=-9.5367432e-007;
+			atlOffset=-9.5367432e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -382,13 +419,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -401,13 +432,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -420,13 +445,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -439,13 +458,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -458,13 +471,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
+							singleType="STRING";
 							value="";
 						};
 					};
@@ -477,13 +484,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -496,13 +497,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -515,13 +510,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -534,13 +523,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -553,13 +536,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -572,13 +549,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -605,13 +576,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -624,13 +589,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -643,13 +602,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
+							singleType="STRING";
 							value="";
 						};
 					};
@@ -662,13 +615,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -681,13 +628,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -700,13 +641,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -719,13 +654,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -738,13 +667,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -757,13 +680,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -820,13 +737,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.04;
 								};
 							};
@@ -863,13 +774,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.97000003;
 								};
 							};
@@ -917,13 +822,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1;
 								};
 							};
@@ -958,13 +857,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.97000003;
 								};
 							};
@@ -998,13 +891,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.04;
 								};
 							};
@@ -1039,13 +926,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1;
 								};
 							};
@@ -1079,13 +960,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.02;
 								};
 							};
@@ -1119,13 +994,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.01;
 								};
 							};
@@ -1159,13 +1028,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.95999998;
 								};
 							};
@@ -1200,13 +1063,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.04;
 								};
 							};
@@ -1240,13 +1097,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.98000002;
 								};
 							};
@@ -1280,13 +1131,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1;
 								};
 							};
@@ -1320,13 +1165,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.99000001;
 								};
 							};
@@ -1374,13 +1213,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1;
 								};
 							};
@@ -1415,13 +1248,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.97000003;
 								};
 							};
@@ -1456,13 +1283,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.04;
 								};
 							};
@@ -1497,13 +1318,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1;
 								};
 							};
@@ -1537,13 +1352,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.02;
 								};
 							};
@@ -1577,13 +1386,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.01;
 								};
 							};
@@ -1618,13 +1421,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.95999998;
 								};
 							};
@@ -1659,13 +1456,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.04;
 								};
 							};
@@ -1699,13 +1490,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.98000002;
 								};
 							};
@@ -1739,13 +1524,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1;
 								};
 							};
@@ -1779,13 +1558,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.99000001;
 								};
 							};
@@ -1872,13 +1645,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.94999999;
 								};
 							};
@@ -1913,13 +1680,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.97000003;
 								};
 							};
@@ -1954,13 +1715,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.98000002;
 								};
 							};
@@ -1995,13 +1750,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.95999998;
 								};
 							};
@@ -2049,13 +1798,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.01;
 								};
 							};
@@ -2090,13 +1833,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.03;
 								};
 							};
@@ -2131,13 +1868,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.03;
 								};
 							};
@@ -2185,13 +1916,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=0.98000002;
 								};
 							};
@@ -2226,13 +1951,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.03;
 								};
 							};
@@ -2280,13 +1999,7 @@ class Mission
 							{
 								class data
 								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
+									singleType="SCALAR";
 									value=1.02;
 								};
 							};
@@ -2827,7 +2540,7 @@ class Mission
 					};
 					id=1777;
 					type="Land_MapBoard_F";
-					atlOffset=-2.3841858e-007;
+					atlOffset=-2.3841858e-07;
 				};
 				class Item5
 				{
@@ -2845,7 +2558,7 @@ class Mission
 					};
 					id=1778;
 					type="MapBoard_altis_F";
-					atlOffset=-2.3841858e-007;
+					atlOffset=-2.3841858e-07;
 				};
 				class Item6
 				{
@@ -2863,7 +2576,7 @@ class Mission
 					};
 					id=1779;
 					type="MapBoard_stratis_F";
-					atlOffset=-2.3841858e-007;
+					atlOffset=-2.3841858e-07;
 				};
 				class Item7
 				{
@@ -3079,6 +2792,7 @@ class Mission
 					};
 					id=1803;
 					type="CamoNet_OPFOR_open_F";
+					atlOffset=-0.045168877;
 				};
 				class Item3
 				{
@@ -3182,6 +2896,7 @@ class Mission
 					};
 					id=1809;
 					type="CamoNet_OPFOR_open_F";
+					atlOffset=-0.045168877;
 				};
 				class Item9
 				{
@@ -3200,6 +2915,7 @@ class Mission
 					};
 					id=1810;
 					type="CamoNet_OPFOR_open_F";
+					atlOffset=-0.045168877;
 				};
 				class Item10
 				{
@@ -3934,6 +3650,7 @@ class Mission
 					};
 					id=1869;
 					type="CamoNet_OPFOR_open_F";
+					atlOffset=-0.045168877;
 				};
 				class Item53
 				{
@@ -4173,7 +3890,7 @@ class Mission
 					};
 					id=1885;
 					type="Land_Cargo_Tower_V3_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=4.7683716e-07;
 				};
 				class Item67
 				{
@@ -4191,7 +3908,7 @@ class Mission
 					};
 					id=1886;
 					type="Land_Metal_Shed_F";
-					atlOffset=2.3841858e-007;
+					atlOffset=2.3841858e-07;
 				};
 				class Item68
 				{
@@ -4447,7 +4164,7 @@ class Mission
 					};
 					id=1924;
 					type="Land_TTowerBig_2_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=4.7683716e-07;
 				};
 				class Item83
 				{
@@ -4992,7 +4709,7 @@ class Mission
 					};
 					id=1981;
 					type="Land_Cargo_Tower_V3_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=4.7683716e-07;
 				};
 				class Item115
 				{
@@ -5385,6 +5102,7 @@ class Mission
 					};
 					id=2022;
 					type="CamoNet_OPFOR_open_F";
+					atlOffset=-0.045168877;
 				};
 				class Item138
 				{
@@ -6977,7 +6695,7 @@ class Mission
 					};
 					id=3256;
 					type="Land_BagFence_Long_F";
-					atlOffset=2.1457672e-006;
+					atlOffset=2.1457672e-06;
 				};
 				class Item5
 				{
@@ -7085,7 +6803,7 @@ class Mission
 					};
 					id=3262;
 					type="Land_HBarrier_3_F";
-					atlOffset=3.9577484e-005;
+					atlOffset=3.9577484e-05;
 				};
 				class Item11
 				{
@@ -7306,7 +7024,7 @@ class Mission
 			name="opfor_point_11";
 			type="Empty";
 			id=4437;
-			atlOffset=9.5367432e-007;
+			atlOffset=9.5367432e-07;
 		};
 		class Item182
 		{
@@ -8171,7 +7889,7 @@ class Mission
 			name="opfor_point_23";
 			type="Empty";
 			id=4535;
-			atlOffset=-1.9073486e-006;
+			atlOffset=-1.9073486e-06;
 		};
 		class Item279
 		{
@@ -8204,7 +7922,7 @@ class Mission
 			name="opfor_point_27";
 			type="Empty";
 			id=4539;
-			atlOffset=1.9073486e-006;
+			atlOffset=1.9073486e-06;
 		};
 		class Item283
 		{
@@ -8847,7 +8565,7 @@ class Mission
 			name="opfor_point_6";
 			type="Empty";
 			id=4611;
-			atlOffset=1.9073486e-006;
+			atlOffset=1.9073486e-06;
 		};
 		class Item355
 		{
@@ -9811,22 +9529,13 @@ class Mission
 		class Item462
 		{
 			dataType="Marker";
-			position[]={7036.5142,75.894699,12878.407};
-			name="opfor_point_282";
-			type="Empty";
-			id=5230;
-			atlOffset=-53.638092;
-		};
-		class Item463
-		{
-			dataType="Marker";
 			position[]={6200.0322,59.086437,12770.735};
 			name="opfor_point_283";
 			type="Empty";
 			id=5231;
 			atlOffset=-53.673405;
 		};
-		class Item464
+		class Item463
 		{
 			dataType="Marker";
 			position[]={6106.2388,51.836727,12592.253};
@@ -9835,7 +9544,7 @@ class Mission
 			id=5232;
 			atlOffset=-53.752041;
 		};
-		class Item465
+		class Item464
 		{
 			dataType="Marker";
 			position[]={6704.8423,6.6657677,11991.691};
@@ -9844,7 +9553,7 @@ class Mission
 			id=5233;
 			atlOffset=-53.75285;
 		};
-		class Item466
+		class Item465
 		{
 			dataType="Marker";
 			position[]={5321.4341,-25.721626,13883.989};
@@ -9853,31 +9562,31 @@ class Mission
 			id=5234;
 			atlOffset=-53.713375;
 		};
-		class Item467
+		class Item466
 		{
 			dataType="Marker";
-			position[]={27485.346,0,5311.1333};
+			position[]={26010.594,-0.090011597,5264.6079};
 			name="huronmarker";
 			text="Spartan 01";
 			type="b_air";
 			id=5267;
-			atlOffset=185.97;
+			atlOffset=185.87999;
 		};
-		class Item468
+		class Item467
 		{
 			dataType="Layer";
 			name="Heliport";
 			id=5468;
 			atlOffset=185.97;
 		};
-		class Item469
+		class Item468
 		{
 			dataType="Layer";
 			name="Check Point (Small)";
 			id=5648;
 			atlOffset=185.97;
 		};
-		class Item470
+		class Item469
 		{
 			dataType="Layer";
 			name="Power Transformer";
@@ -9900,7 +9609,7 @@ class Mission
 					};
 					id=5725;
 					type="Land_HighVoltageEnd_F";
-					atlOffset=-4.7683716e-007;
+					atlOffset=-4.7683716e-07;
 				};
 				class Item1
 				{
@@ -9918,7 +9627,7 @@ class Mission
 					};
 					id=5726;
 					type="Land_IndFnc_9_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=4.7683716e-07;
 				};
 				class Item2
 				{
@@ -9936,7 +9645,7 @@ class Mission
 					};
 					id=5727;
 					type="Land_IndFnc_9_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=4.7683716e-07;
 				};
 				class Item3
 				{
@@ -10143,7 +9852,7 @@ class Mission
 					};
 					id=5740;
 					type="Land_IndFnc_Corner_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=4.7683716e-07;
 				};
 				class Item15
 				{
@@ -10178,7 +9887,7 @@ class Mission
 					};
 					id=5742;
 					type="Land_IndFnc_3_Hole_F";
-					atlOffset=2.3841858e-007;
+					atlOffset=2.3841858e-07;
 				};
 				class Item17
 				{
@@ -10196,7 +9905,7 @@ class Mission
 					};
 					id=5743;
 					type="Land_IndFnc_3_F";
-					atlOffset=4.7683716e-007;
+					atlOffset=4.7683716e-07;
 				};
 				class Item18
 				{
@@ -10248,7 +9957,7 @@ class Mission
 					};
 					id=5746;
 					type="Land_dp_transformer_F";
-					atlOffset=-9.5367432e-007;
+					atlOffset=-9.5367432e-07;
 				};
 				class Item21
 				{
@@ -10266,7 +9975,7 @@ class Mission
 					};
 					id=5747;
 					type="Land_dp_transformer_F";
-					atlOffset=-2.3841858e-007;
+					atlOffset=-2.3841858e-07;
 				};
 				class Item22
 				{
@@ -10324,7 +10033,7 @@ class Mission
 			id=5751;
 			atlOffset=0.24583912;
 		};
-		class Item471
+		class Item470
 		{
 			dataType="Marker";
 			position[]={16192.706,13.415049,16753.387};
@@ -10333,7 +10042,7 @@ class Mission
 			id=5759;
 			atlOffset=-0.06427002;
 		};
-		class Item472
+		class Item471
 		{
 			dataType="Marker";
 			position[]={16848.641,46.434944,16891.791};
@@ -10342,7 +10051,7 @@ class Mission
 			id=5760;
 			atlOffset=-0.090259552;
 		};
-		class Item473
+		class Item472
 		{
 			dataType="Marker";
 			position[]={16922.219,25.971214,17316.74};
@@ -10351,7 +10060,7 @@ class Mission
 			id=5761;
 			atlOffset=-0.010948181;
 		};
-		class Item474
+		class Item473
 		{
 			dataType="Marker";
 			position[]={17395.627,60.168579,16743.813};
@@ -10360,7 +10069,7 @@ class Mission
 			id=5762;
 			atlOffset=-0.078857422;
 		};
-		class Item475
+		class Item474
 		{
 			dataType="Marker";
 			position[]={6423.1255,32.264839,15277.469};
@@ -10369,7 +10078,7 @@ class Mission
 			id=5763;
 			atlOffset=-0.058929443;
 		};
-		class Item476
+		class Item475
 		{
 			dataType="Marker";
 			position[]={6627.7671,41.478218,15202.2};
@@ -10378,7 +10087,7 @@ class Mission
 			id=5764;
 			atlOffset=-0.1120491;
 		};
-		class Item477
+		class Item476
 		{
 			dataType="Marker";
 			position[]={7603.918,97.634254,16026.308};
@@ -10387,7 +10096,7 @@ class Mission
 			id=5765;
 			atlOffset=0.0043792725;
 		};
-		class Item478
+		class Item477
 		{
 			dataType="Marker";
 			position[]={7339.7964,180.15141,17445.154};
@@ -10396,7 +10105,7 @@ class Mission
 			id=5766;
 			atlOffset=-0.049606323;
 		};
-		class Item479
+		class Item478
 		{
 			dataType="Marker";
 			position[]={7091.2256,176.12502,18175.416};
@@ -10405,7 +10114,7 @@ class Mission
 			id=5767;
 			atlOffset=0.0017242432;
 		};
-		class Item480
+		class Item479
 		{
 			dataType="Marker";
 			position[]={6309.3799,200.17032,18229.717};
@@ -10414,7 +10123,7 @@ class Mission
 			id=5768;
 			atlOffset=-0.011978149;
 		};
-		class Item481
+		class Item480
 		{
 			dataType="Marker";
 			position[]={5430.8486,239.47791,20360.84};
@@ -10423,7 +10132,7 @@ class Mission
 			id=5770;
 			atlOffset=-0.080230713;
 		};
-		class Item482
+		class Item481
 		{
 			dataType="Marker";
 			position[]={5685.0073,221.44687,20023.154};
@@ -10432,7 +10141,7 @@ class Mission
 			id=5771;
 			atlOffset=-0.076934814;
 		};
-		class Item483
+		class Item482
 		{
 			dataType="Marker";
 			position[]={10086.43,153.32118,17938.967};
@@ -10441,7 +10150,7 @@ class Mission
 			id=5772;
 			atlOffset=-0.2015686;
 		};
-		class Item484
+		class Item483
 		{
 			dataType="Marker";
 			position[]={8133.2393,74.780235,22541.266};
@@ -10450,7 +10159,7 @@ class Mission
 			id=5773;
 			atlOffset=-0.018760681;
 		};
-		class Item485
+		class Item484
 		{
 			dataType="Marker";
 			position[]={10544.01,66.685852,14381.853};
@@ -10459,7 +10168,7 @@ class Mission
 			id=5774;
 			atlOffset=-0.028274536;
 		};
-		class Item486
+		class Item485
 		{
 			dataType="Marker";
 			position[]={11432.078,24.412796,14890.679};
@@ -10468,7 +10177,7 @@ class Mission
 			id=5775;
 			atlOffset=-0.051605225;
 		};
-		class Item487
+		class Item486
 		{
 			dataType="Marker";
 			position[]={11498.011,31.450602,15096.906};
@@ -10477,7 +10186,7 @@ class Mission
 			id=5776;
 			atlOffset=-0.040708542;
 		};
-		class Item488
+		class Item487
 		{
 			dataType="Marker";
 			position[]={11713.467,35.278755,15445.337};
@@ -10486,7 +10195,7 @@ class Mission
 			id=5777;
 			atlOffset=-0.075603485;
 		};
-		class Item489
+		class Item488
 		{
 			dataType="Marker";
 			position[]={11841.335,62.259323,19675.988};
@@ -10495,7 +10204,7 @@ class Mission
 			id=5778;
 			atlOffset=-0.073600769;
 		};
-		class Item490
+		class Item489
 		{
 			dataType="Marker";
 			position[]={11558.554,146.92183,20495.178};
@@ -10504,7 +10213,7 @@ class Mission
 			id=5779;
 			atlOffset=-0.15023804;
 		};
-		class Item491
+		class Item490
 		{
 			dataType="Marker";
 			position[]={15663.876,24.754658,17923.283};
@@ -10513,7 +10222,7 @@ class Mission
 			id=5780;
 			atlOffset=-0.018947601;
 		};
-		class Item492
+		class Item491
 		{
 			dataType="Marker";
 			position[]={15669.196,41.829681,18328.965};
@@ -10522,7 +10231,7 @@ class Mission
 			id=5781;
 			atlOffset=0.025707245;
 		};
-		class Item493
+		class Item492
 		{
 			dataType="Marker";
 			position[]={16066.893,27.729546,18925.844};
@@ -10531,7 +10240,7 @@ class Mission
 			id=5782;
 			atlOffset=-0.036277771;
 		};
-		class Item494
+		class Item493
 		{
 			dataType="Marker";
 			position[]={15702.304,28.04685,20259.564};
@@ -10540,7 +10249,7 @@ class Mission
 			id=5783;
 			atlOffset=-0.072935104;
 		};
-		class Item495
+		class Item494
 		{
 			dataType="Marker";
 			position[]={15371.576,40.472565,20251.398};
@@ -10549,7 +10258,7 @@ class Mission
 			id=5784;
 			atlOffset=-0.068939209;
 		};
-		class Item496
+		class Item495
 		{
 			dataType="Marker";
 			position[]={15493.502,59.732117,21419.451};
@@ -10558,7 +10267,7 @@ class Mission
 			id=5785;
 			atlOffset=-0.020946503;
 		};
-		class Item497
+		class Item496
 		{
 			dataType="Marker";
 			position[]={14065.551,35.243378,22953.912};
@@ -10567,7 +10276,7 @@ class Mission
 			id=5786;
 			atlOffset=-0.083984375;
 		};
-		class Item498
+		class Item497
 		{
 			dataType="Marker";
 			position[]={11258.464,44.071999,17057.637};
@@ -10576,12 +10285,12 @@ class Mission
 			id=5787;
 			atlOffset=-0.063640594;
 		};
-		class Item499
+		class Item498
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={27449.313,0,5497.0952};
+				position[]={26340.236,0.030532837,5245.4639};
 				angles[]={0,3.1415927,0};
 			};
 			side="Empty";
@@ -10591,7 +10300,7 @@ class Mission
 			};
 			id=5817;
 			type="Land_Carrier_01_base_F";
-			atlOffset=185.97;
+			atlOffset=186.00053;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10602,13 +10311,40 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item499
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25871.346,2.1901782,5382.7759};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="startbase";
+			};
+			id=5818;
+			type="Land_ClutterCutter_small_F";
+			atlOffset=0.67327905;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -10621,16 +10357,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={27466.58,23.518648,5408.188};
+				position[]={25870.393,10.70813,5330.7568};
 			};
 			side="Empty";
 			class Attributes
 			{
-				name="startbase";
+				name="littlebird_0";
 			};
-			id=5818;
+			id=5821;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=209.48865;
+			atlOffset=1.0105581;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10641,13 +10377,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -10660,16 +10390,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={27476.613,23.528444,5445.1978};
+				position[]={25871.127,9.6972961,5295.9268};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="littlebird_0";
+				name="huronspawn";
 			};
-			id=5821;
+			id=5828;
 			type="Land_ClutterCutter_small_F";
+			atlOffset=3.8146973e-06;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10680,13 +10411,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -10699,16 +10424,16 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={27483.92,23.542109,5341.9409};
+				position[]={26093.008,23.528442,5433.1523};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				name="huronspawn";
+				name="littlebird_1";
 			};
-			id=5828;
+			id=5829;
 			type="Land_ClutterCutter_small_F";
+			atlOffset=209.49844;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10719,13 +10444,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -10738,16 +10457,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={27476.418,23.528444,5481.1841};
+				position[]={25881.658,13.610693,5311.1572};
+				angles[]={0,6.2705736,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
-				name="littlebird_1";
+				name="base_boxspawn";
 			};
-			id=5829;
+			id=5831;
 			type="Land_ClutterCutter_small_F";
+			atlOffset=3.9134007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10758,13 +10478,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=0;
 						};
 					};
@@ -10774,87 +10488,8 @@ class Mission
 		};
 		class Item504
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={27476.391,23.538576,5532.3096};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="littlebird_2";
-			};
-			id=5830;
-			type="Land_ClutterCutter_small_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item505
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={27415.729,23.539343,5349.5513};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				name="base_boxspawn";
-			};
-			id=5831;
-			type="Land_ClutterCutter_small_F";
-			atlOffset=0.026340485;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item506
-		{
 			dataType="Marker";
-			position[]={27435.021,0,5463.521};
+			position[]={25862.986,0,5384.9536};
 			name="startbase_marker";
 			text="Operation Base";
 			type="mil_start";
@@ -10862,46 +10497,28 @@ class Mission
 			id=5832;
 			atlOffset=185.97;
 		};
-		class Item507
+		class Item505
 		{
 			dataType="Layer";
 			name="Cache Ammo [BLU]";
 			id=6002;
 			atlOffset=185.97;
 		};
-		class Item508
+		class Item506
 		{
 			dataType="Layer";
 			name="Storage (Lamp) [BLU]";
 			id=6017;
 			atlOffset=185.97;
 		};
-		class Item509
+		class Item507
 		{
 			dataType="Layer";
 			name="Storage [BLU] #1";
 			id=6409;
 			atlOffset=185.97;
 		};
-		class Item510
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={27482.145,24.218649,5375.0635};
-				angles[]={0,1.571093,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this setVariable [""ace_medical_isMedicalFacility"", true, true];";
-			};
-			id=6417;
-			type="Land_Medevac_house_V1_F";
-			atlOffset=209.48865;
-		};
-		class Item511
+		class Item508
 		{
 			dataType="Marker";
 			position[]={16747.148,202.38486,13648.493};
@@ -10912,46 +10529,13 @@ class Mission
 			id=6418;
 			atlOffset=192.86084;
 		};
-		class Item512
+		class Item509
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={27480.521,27.495453,5376.5474};
-				angles[]={0,3.1415927,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				init="this setFlagTexture ""res\flag_kp_co.paa"";";
-			};
-			id=6419;
-			type="Flag_White_F";
-			atlOffset=8.5367746;
-		};
-		class Item513
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={27480.379,27.495453,5378.5591};
-				angles[]={0,3.7524579,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-			};
-			id=6421;
-			type="Flag_US_F";
-			atlOffset=8.5367746;
-		};
-		class Item514
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={27435.506,0,5296.2451};
-				angles[]={0,3.1415927,0};
+				position[]={25870.662,0.85102057,5328.1934};
+				angles[]={0,0.0015389048,0};
 			};
 			side="Empty";
 			class Attributes
@@ -10960,60 +10544,9 @@ class Mission
 			};
 			id=6422;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=185.97;
+			atlOffset=2.3873565;
 		};
-		class Item515
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={27445.506,0,5296.2451};
-				angles[]={0,3.1415927,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="boat_1";
-			};
-			id=6423;
-			type="Land_ClutterCutter_small_F";
-			atlOffset=185.97;
-		};
-		class Item516
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={27455.506,0,5296.2451};
-				angles[]={0,3.1415927,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="boat_2";
-			};
-			id=6424;
-			type="Land_ClutterCutter_small_F";
-			atlOffset=185.97;
-		};
-		class Item517
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={27465.506,0,5296.2451};
-				angles[]={0,3.1415927,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="boat_3";
-			};
-			id=6425;
-			type="Land_ClutterCutter_small_F";
-			atlOffset=185.97;
-		};
-		class Item518
+		class Item510
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11022,7 +10555,7 @@ class Mission
 			};
 			id=425;
 			type="ModuleCuratorSetAttributesPlayer_F";
-			atlOffset=-9.5367432e-007;
+			atlOffset=-9.5367432e-07;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11033,13 +10566,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -11052,13 +10579,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -11071,13 +10592,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -11090,13 +10605,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -11109,13 +10618,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
+							singleType="STRING";
 							value="";
 						};
 					};
@@ -11128,13 +10631,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -11147,13 +10644,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -11166,13 +10657,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -11185,13 +10670,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -11204,13 +10683,7 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
@@ -11223,18 +10696,971 @@ class Mission
 					{
 						class data
 						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
+							singleType="BOOL";
 							value=1;
 						};
 					};
 				};
 				nAttributes=11;
+			};
+		};
+		class Item511
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25870.99,0,5387.5688};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=6426;
+			type="Land_EF_LPD_base";
+			atlOffset=185.97;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="CustomShipName";
+					expression="_this setVariable ['ef_ship_name', _value, true]";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="CHAIR";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item512
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25879.018,12.230444,5361.8516};
+				angles[]={0,1.4905596,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=6429;
+			type="EF_Banner_01_29thMEU";
+			atlOffset=2.0633078;
+		};
+		class Item513
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25879.063,12.180075,5359.9766};
+				angles[]={0,4.7555723,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=6430;
+			type="Banner_01_NATO_F";
+			atlOffset=2.0130148;
+		};
+		class Item514
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26580.77,0.18095398,5527.2373};
+				angles[]={0,3.0354464,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=6500;
+			type="Land_Destroyer_01_base_F";
+			atlOffset=186.15096;
+		};
+		class Item515
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26572.678,14.984856,5604.8154};
+				angles[]={6.2572508,6.1738391,6.2804232};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+				receiveRemoteTargets=1;
+			};
+			id=6502;
+			type="B_Ship_Gun_01_F";
+			atlOffset=0.00094032288;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item516
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26574.148,12.071777,5589.356};
+				angles[]={6.2761936,6.1924658,6.2825422};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				receiveRemoteTargets=1;
+			};
+			id=6503;
+			type="B_Ship_MRLS_01_F";
+			atlOffset=196.66827;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item517
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26586.641,17.804514,5476.8452};
+				angles[]={0,3.023607,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6504;
+			type="B_SAM_System_02_F";
+			atlOffset=0.4202652;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item518
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26575.955,17.542131,5574.7114};
+				angles[]={0,6.1117353,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6506;
+			type="B_AAA_System_01_F";
+			atlOffset=1.2617626;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item519
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26310.381,21.328922,5070.582};
+				angles[]={0.00048828125,3.9954093,6.2826972};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6507;
+			type="B_SAM_System_01_F";
+			atlOffset=205.54245;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item520
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26379.738,21.897867,5066.9829};
+				angles[]={0,1.9958619,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6508;
+			type="B_SAM_System_02_F";
+			atlOffset=205.8972;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item521
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26357.037,13.46613,5056.4438};
+				angles[]={0,3.1268508,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6509;
+			type="B_AAA_System_01_F";
+			atlOffset=196.93037;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item522
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26292.865,20.441284,5245.5098};
+				angles[]={0,4.7335801,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6510;
+			type="B_AAA_System_01_F";
+			atlOffset=203.90553;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item523
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26315.459,18.73675,5360.1274};
+				angles[]={0,4.739397,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6511;
+			type="B_SAM_System_02_F";
+			atlOffset=1.9073486e-06;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item524
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26370.646,20.200912,5350.8984};
+				angles[]={0,1.6058536,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6512;
+			type="B_AAA_System_01_F";
+			atlOffset=0.023460388;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item525
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={26372.381,24.555435,5346.2188};
+				angles[]={0,1.602188,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6513;
+			type="B_SAM_System_01_F";
+			atlOffset=3.3685379;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item526
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25860.816,14.775087,5458.6641};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+			};
+			id=6514;
+			type="EF_LPD_Turret_1_MJTF_Wdl";
+			atlOffset=1.258604;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item527
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25858.838,24.704472,5351.4321};
+				angles[]={0,3.1173675,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6519;
+			type="B_SAM_System_01_F";
+			atlOffset=2.4834557;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item528
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25883.863,19.730089,5348.6812};
+				angles[]={0,3.1456244,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+			};
+			id=6520;
+			type="EF_LPD_Turret_1_MJTF_Wdl";
+			atlOffset=0.074108124;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item529
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25653.436,0.18095398,5527.2373};
+				angles[]={0,3.0354464,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=6541;
+			type="Land_Destroyer_01_base_F";
+			atlOffset=186.15096;
+		};
+		class Item530
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25645.344,14.984856,5604.8154};
+				angles[]={6.2572508,6.1738391,6.2804232};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+				receiveRemoteTargets=1;
+			};
+			id=6542;
+			type="B_Ship_Gun_01_F";
+			atlOffset=0.00094032288;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item531
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25646.814,12.071777,5589.356};
+				angles[]={6.2761936,6.1924658,6.2825422};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				receiveRemoteTargets=1;
+			};
+			id=6543;
+			type="B_Ship_MRLS_01_F";
+			atlOffset=196.66827;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item532
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25659.307,17.804667,5476.8452};
+				angles[]={0,3.0236084,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6544;
+			type="B_SAM_System_02_F";
+			atlOffset=0.42041779;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item533
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25648.621,17.542131,5574.7114};
+				angles[]={0,6.1117353,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6545;
+			type="B_AAA_System_01_F";
+			atlOffset=1.2617626;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item534
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25870.859,19.933475,5454.8628};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+				aiRadarUsage=1;
+			};
+			id=6546;
+			type="B_SAM_System_01_F";
+			atlOffset=2.6703119;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item535
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25869.619,13.645196,5398.7163};
+				angles[]={0,4.7044005,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6818;
+			type="Land_EF_CombatBoat_Cradle";
+		};
+		class Item536
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25869.676,13.645197,5391.4463};
+				angles[]={0,4.7044005,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=6817;
+			type="Land_EF_CombatBoat_Cradle";
+			atlOffset=1.9073486e-06;
+		};
+		class Item537
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25876.867,2.2041566,5408.8174};
+				angles[]={0,3.5127668,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="MarineBoat_0";
+			};
+			id=6815;
+			type="Land_ClutterCutter_small_F";
+			atlOffset=0.68732524;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item538
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25866.184,2.1747682,5408.2754};
+				angles[]={0,2.5780985,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="MarineBoat_1";
+			};
+			id=6824;
+			type="Land_ClutterCutter_small_F";
+			atlOffset=0.65793681;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item539
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25870.527,10.269301,5363.1191};
+				angles[]={0,3.0933146,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				name="MarineBoat_2";
+			};
+			id=6827;
+			type="Land_ClutterCutter_small_F";
+			atlOffset=0.57165337;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};
