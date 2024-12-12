@@ -8,7 +8,7 @@ class EditorData
 	toggles=1546;
 	class ItemIDProvider
 	{
-		nextID=6832;
+		nextID=6834;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={25902.16,16.941145,5283.772};
-		dir[]={-0.73248953,-0.084410846,0.67568105};
-		up[]={-0.062085789,0.99642372,0.057270195};
-		aside[]={0.67810965,-2.0302832e-07,0.73511851};
+		pos[]={25346.344,95.410774,5213.4404};
+		dir[]={-0.97570771,-0.13073595,-0.17624715};
+		up[]={-0.12870719,0.99140215,-0.023249231};
+		aside[]={-0.1777702,-5.3744225e-07,0.98415256};
 	};
 };
 binarizationWanted=0;
@@ -67,13 +67,14 @@ addons[]=
 	"EF_Static",
 	"EF_CombatBoat_C",
 	"A3_Boat_F_EPC_Submarine_01",
-	"RF_Props_Flags"
+	"RF_Props_Flags",
+	"A3_Props_F_Decade_Spaceship"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=19;
+		items=20;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -207,6 +208,11 @@ class AddonsMetaData
 			author="Rotators Collective";
 			url="https://reactionforces.rotators.net/";
 		};
+		class Item19
+		{
+			className="A3_Props_F_Decade_Spaceship";
+			name="A3_Props_F_Decade_Spaceship";
+		};
 	};
 };
 dlcs[]=
@@ -214,7 +220,9 @@ dlcs[]=
 	"Jets",
 	"ef",
 	"ORANGE",
-	"rf"
+	"rf",
+	"Argo",
+	"Decade"
 };
 randomSeed=7564349;
 class ScenarioData
@@ -277,7 +285,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=542;
+		items=544;
 		class Item0
 		{
 			dataType="Marker";
@@ -11760,6 +11768,74 @@ class Mission
 						{
 							singleType="STRING";
 							value="res\Liblogo.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item542
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7242.396,44.854809,12174.392};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=6832;
+			type="SpaceshipCapsule_01_wreck_F";
+			atlOffset=0.096504211;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item543
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7258.1201,45.361141,12184.09};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=6833;
+			type="SpaceshipCapsule_01_debris_F";
+			atlOffset=-0.20138168;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
 						};
 					};
 				};

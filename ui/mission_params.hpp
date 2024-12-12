@@ -165,19 +165,19 @@ class Params {
         title = $STR_A3_RequiredTrait;
         values[] = {0, 1};
         texts[] = {$STR_A3_None, $STR_A3_Medic};
-        default = 1;
+        default = 0;
     };
     class ReviveMedicSpeedMultiplier {
         title = $STR_A3_RequiredTrait_MedicSpeedMultiplier;
         values[] = {1, 1.5, 2, 2.5, 3};
         texts[] = {"1x", "1.5x", "2x", "2.5x", "3x"};
-        default = 1;
+        default = 3;
     };
     class ReviveRequiredItems {
         title = $STR_A3_RequiredItems;
         values[] = {0, 1, 2};
         texts[] = {$STR_A3_None, $STR_A3_Medikit, $STR_A3_FirstAidKitOrMedikit};
-        default = 1;
+        default = 2;
     };
     class UnconsciousStateMode {
         title = $STR_A3_IncapacitationMode;
