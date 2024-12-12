@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=522;
+	toggles=1546;
 	class ItemIDProvider
 	{
-		nextID=6829;
+		nextID=6832;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1060;
+		nextID=1069;
 	};
 	class Camera
 	{
-		pos[]={25840.086,40.242798,5771.5503};
-		dir[]={0.31759828,-0.17981991,0.93101889};
-		up[]={0.05805685,0.98369956,0.17018992};
-		aside[]={0.94644642,0,-0.32286108};
+		pos[]={25902.16,16.941145,5283.772};
+		dir[]={-0.73248953,-0.084410846,0.67568105};
+		up[]={-0.062085789,0.99642372,0.057270195};
+		aside[]={0.67810965,-2.0302832e-07,0.73511851};
 	};
 };
 binarizationWanted=0;
-sourceName="kp_liberation";
+sourceName="KP-Liberation-2035-Conflict";
 addons[]=
 {
 	"A3_Ui_F",
@@ -65,13 +65,15 @@ addons[]=
 	"A3_Static_F_Jets_AAA_System_01",
 	"A3_Static_F_Jets_SAM_System_01",
 	"EF_Static",
-	"EF_CombatBoat_C"
+	"EF_CombatBoat_C",
+	"A3_Boat_F_EPC_Submarine_01",
+	"RF_Props_Flags"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=17;
+		items=19;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -191,13 +193,28 @@ class AddonsMetaData
 			author="Tiny Gecko Studios";
 			url="https://www.arma3.com";
 		};
+		class Item17
+		{
+			className="A3_Boat_F_EPC";
+			name="Arma 3 Win Episode - Boats and Submersibles";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item18
+		{
+			className="RF_Props";
+			name="Arma 3 Creator DLC: Reaction Forces - Decorative and Mission Objects";
+			author="Rotators Collective";
+			url="https://reactionforces.rotators.net/";
+		};
 	};
 };
 dlcs[]=
 {
 	"Jets",
 	"ef",
-	"ORANGE"
+	"ORANGE",
+	"rf"
 };
 randomSeed=7564349;
 class ScenarioData
@@ -260,7 +277,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=540;
+		items=542;
 		class Item0
 		{
 			dataType="Marker";
@@ -10775,8 +10792,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26580.77,0.18095398,5527.2373};
-				angles[]={0,3.0354464,0};
+				position[]={26603.943,0.18095398,4757.8564};
+				angles[]={0,3.1719623,-0};
 			};
 			side="Empty";
 			class Attributes
@@ -10791,8 +10808,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26572.678,14.984856,5604.8154};
-				angles[]={6.2572508,6.1738391,6.2804232};
+				position[]={26606.484,14.984856,4835.814};
+				angles[]={6.2571163,0.027123254,0.00079263031};
 			};
 			side="Empty";
 			flags=4;
@@ -10803,7 +10820,7 @@ class Mission
 			};
 			id=6502;
 			type="B_Ship_Gun_01_F";
-			atlOffset=0.00094032288;
+			atlOffset=0.00095176697;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10827,8 +10844,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26574.148,12.071777,5589.356};
-				angles[]={6.2761936,6.1924658,6.2825422};
+				position[]={26605.838,12.071777,4820.2983};
+				angles[]={6.2761712,0.045792736,0.00031440944};
 			};
 			side="Empty";
 			class Attributes
@@ -10863,8 +10880,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26586.641,17.804514,5476.8452};
-				angles[]={0,3.023607,0};
+				position[]={26602.9,17.804514,4707.1343};
+				angles[]={0,3.1601229,-0};
 			};
 			side="Empty";
 			class Attributes
@@ -10902,8 +10919,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={26575.955,17.542131,5574.7114};
-				angles[]={0,6.1117353,0};
+				position[]={26605.635,17.542131,4805.5439};
+				angles[]={0,6.248251,-0};
 			};
 			side="Empty";
 			class Attributes
@@ -10917,7 +10934,7 @@ class Mission
 			};
 			id=6506;
 			type="B_AAA_System_01_F";
-			atlOffset=1.2617626;
+			atlOffset=1.2617722;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11329,8 +11346,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={25653.436,0.18095398,5527.2373};
-				angles[]={0,3.0354464,0};
+				position[]={25653.436,0.18099976,5527.2368};
+				angles[]={0,3.0354416,0};
 			};
 			side="Empty";
 			class Attributes
@@ -11338,7 +11355,24 @@ class Mission
 			};
 			id=6541;
 			type="Land_Destroyer_01_base_F";
-			atlOffset=186.15096;
+			atlOffset=186.151;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="CustomShipFlagTexture0";
+					expression="([_this, 'ShipFlag_US_F'] call bis_fnc_destroyer01GetShipPart) setFlagTexture _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="\A3\Ui_f\data\Map\Markers\Flags\italy_ca.paa";
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item530
 		{
@@ -11357,7 +11391,7 @@ class Mission
 			};
 			id=6542;
 			type="B_Ship_Gun_01_F";
-			atlOffset=0.00094032288;
+			atlOffset=0.00088024139;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11432,7 +11466,7 @@ class Mission
 			};
 			id=6544;
 			type="B_SAM_System_02_F";
-			atlOffset=0.42041779;
+			atlOffset=0.42037201;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11471,7 +11505,7 @@ class Mission
 			};
 			id=6545;
 			type="B_AAA_System_01_F";
-			atlOffset=1.2617626;
+			atlOffset=1.2617168;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -11657,6 +11691,75 @@ class Mission
 						{
 							singleType="BOOL";
 							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item540
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25792.674,-1.4581022,5080.8779};
+				angles[]={0,3.1318362,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				createAsSimpleObject=1;
+				disableSimulation=1;
+			};
+			id=6829;
+			type="Submarine_01_F";
+			atlOffset=176.455;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item541
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25865.688,16.808155,5347.5552};
+				angles[]={0.1755452,0,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=6830;
+			type="Banner_02_white_RF";
+			atlOffset=2.6307821;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ObjectTextureCustom0";
+					expression="_this setObjectTextureGlobal [0,_value]";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="res\Liblogo.paa";
 						};
 					};
 				};
