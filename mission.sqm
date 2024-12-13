@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1537;
+	toggles=1546;
 	class ItemIDProvider
 	{
-		nextID=6913;
+		nextID=6927;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1069;
+		nextID=1087;
 	};
 	class Camera
 	{
-		pos[]={14491.554,10.615349,5892.7275};
-		dir[]={-0.080507912,-0.27154809,-0.95905179};
-		up[]={-0.022715298,0.96242487,-0.27059639};
-		aside[]={-0.99649525,1.8626451e-09,0.083651118};
+		pos[]={21184.201,997.57782,6119.9814};
+		dir[]={0.7032854,-0.67295629,0.2291939};
+		up[]={0.63983667,0.73967987,0.20851639};
+		aside[]={0.30985317,-1.0876101e-07,-0.95078814};
 	};
 };
 binarizationWanted=0;
@@ -66,17 +66,18 @@ addons[]=
 	"A3_Static_F_Jets_AAA_System_01",
 	"A3_Static_F_Jets_SAM_System_01",
 	"EF_Static",
-	"EF_CombatBoat_C",
 	"A3_Boat_F_EPC_Submarine_01",
 	"RF_Props_Flags",
 	"A3_Props_F_Decade_Spaceship",
-	"Characters_f_lxWS"
+	"Characters_f_lxWS",
+	"EF_CombatBoat_C",
+	"EF_Functions"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=22;
+		items=23;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -198,36 +199,43 @@ class AddonsMetaData
 		};
 		class Item17
 		{
-			className="EF_CombatBoat_C";
-			name="Expeditionary Forces - Combat Boat (Encoding)";
-			author="Tiny Gecko Studios";
-			url="https://www.arma3.com";
-		};
-		class Item18
-		{
 			className="A3_Boat_F_EPC";
 			name="Arma 3 Win Episode - Boats and Submersibles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item19
+		class Item18
 		{
 			className="RF_Props";
 			name="Arma 3 Creator DLC: Reaction Forces - Decorative and Mission Objects";
 			author="Rotators Collective";
 			url="https://reactionforces.rotators.net/";
 		};
-		class Item20
+		class Item19
 		{
 			className="A3_Props_F_Decade_Spaceship";
 			name="A3_Props_F_Decade_Spaceship";
 		};
-		class Item21
+		class Item20
 		{
 			className="Characters_f_lxWS";
 			name="Arma 3 Creator DLC: Western Sahara - Characters and Clothing";
 			author="Rotators Collective";
 			url="https://sahara.rotators.net/";
+		};
+		class Item21
+		{
+			className="EF_CombatBoat_C";
+			name="Expeditionary Forces - Combat Boat (Encoding)";
+			author="Tiny Gecko Studios";
+			url="https://www.arma3.com";
+		};
+		class Item22
+		{
+			className="EF_Functions";
+			name="Expeditionary Forces - Functions";
+			author="Tiny Gecko Studios";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -302,7 +310,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=544;
+		items=546;
 		class Item0
 		{
 			dataType="Marker";
@@ -325,6 +333,7 @@ class Mission
 			};
 			id=331;
 			type="EmptyDetector";
+			atlOffset=0.00033473969;
 		};
 		class Item2
 		{
@@ -10005,7 +10014,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={26603.943,0.18095398,4757.8564};
-				angles[]={0,3.1719623,-0};
+				angles[]={0,3.1719623,0};
 			};
 			side="Empty";
 			class Attributes
@@ -10093,7 +10102,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={26602.9,17.804514,4707.1343};
-				angles[]={0,3.1601229,-0};
+				angles[]={0,3.1601229,0};
 			};
 			side="Empty";
 			flags=4;
@@ -10133,7 +10142,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={26605.635,17.542131,4805.5439};
-				angles[]={0,6.248251,-0};
+				angles[]={0,6.248251,0};
 			};
 			side="Empty";
 			class Attributes
@@ -10780,34 +10789,51 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={25858.344,10.704819,5312.7808};
-				angles[]={-0,6.274034,0};
+				position[]={25876.867,2.2039948,5408.8169};
+				angles[]={0,3.5127718,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
+				name="MRAP_0";
 			};
-			id=6818;
-			type="Land_EF_CombatBoat_Cradle";
-			atlOffset=3.8146973e-06;
+			id=6815;
+			type="Land_ClutterCutter_small_F";
+			atlOffset=0.68716335;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item533
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={25876.867,2.2041566,5408.8174};
-				angles[]={0,3.5127668,0};
+				position[]={25866.184,2.1750031,5408.2749};
+				angles[]={0,2.5780957,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				name="MarineBoat_0";
+				name="MRAP_1";
 			};
-			id=6815;
+			id=6824;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=0.68732524;
+			atlOffset=0.65817165;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10831,17 +10857,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={25866.184,2.1747682,5408.2754};
-				angles[]={0,2.5780985,0};
+				position[]={25870.527,10.268997,5363.1191};
+				angles[]={0,3.0933168,0};
 			};
 			side="Empty";
 			class Attributes
 			{
-				name="MarineBoat_1";
+				name="MRAP_2";
 			};
-			id=6824;
+			id=6827;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=0.65793681;
+			atlOffset=0.57134914;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -10861,40 +10887,6 @@ class Mission
 			};
 		};
 		class Item535
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={25870.527,10.269301,5363.1191};
-				angles[]={0,3.0933146,0};
-			};
-			side="Empty";
-			class Attributes
-			{
-				name="MarineBoat_2";
-			};
-			id=6827;
-			type="Land_ClutterCutter_small_F";
-			atlOffset=0.57165337;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="allowDamage";
-					expression="_this allowdamage _value;";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item536
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10929,7 +10921,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item537
+		class Item536
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10963,7 +10955,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item538
+		class Item537
 		{
 			dataType="Object";
 			class PositionInfo
@@ -10997,7 +10989,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item539
+		class Item538
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11031,7 +11023,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item540
+		class Item539
 		{
 			dataType="Group";
 			side="West";
@@ -11243,7 +11235,7 @@ class Mission
 			id=6876;
 			atlOffset=6.8664551e-05;
 		};
-		class Item541
+		class Item540
 		{
 			dataType="Group";
 			side="West";
@@ -11303,7 +11295,7 @@ class Mission
 			};
 			id=6889;
 		};
-		class Item542
+		class Item541
 		{
 			dataType="Group";
 			side="West";
@@ -11511,31 +11503,115 @@ class Mission
 			};
 			id=6892;
 		};
-		class Item543
+		class Item542
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={25858.232,13.757018,5314.3706};
+				position[]={25847.586,10.713026,5309.3359};
+				angles[]={0,3.0933168,0};
 			};
 			side="Empty";
 			class Attributes
 			{
+				name="MarineBoat_0";
 			};
-			id=6910;
-			type="EF_B_CombatBoat_HMG_MJTF_Wdl";
-			atlOffset=1.0037193;
+			id=6917;
+			type="Land_ClutterCutter_small_F";
+			atlOffset=196.68303;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item543
+		{
+			dataType="Trigger";
+			position[]={25848.043,0.35528374,5308.4209};
+			class Attributes
+			{
+				onActivation="boat1 = nearestObjects [boatrack1, [""EF_B_CombatBoat_HMG_MJTF_Wdl""], 100];" \n "_success = boatrack1 setVehicleCargo (boat1 select 0);";
+				sizeA=8.0658798;
+				sizeB=20.03241;
+				sizeC=5;
+				activationBy="CIV";
+				isRectangle=1;
+			};
+			id=6924;
+			type="EmptyDetectorArea10x10";
+			atlOffset=186.32529;
+		};
+		class Item544
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={25859.268,10.705523,5311.542};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				name="boatrack1";
+			};
+			id=6925;
+			type="Land_EF_CombatBoat_Cradle";
+			atlOffset=0.00070762634;
+		};
+		class Item545
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={25852.348,9.6970062,5311.2939};
+			};
+			areaSize[]={30.514999,0,25};
+			areaIsRectangle=1;
+			flags=1;
+			id=6926;
+			type="EF_ModuleCradle";
+			atlOffset=195.66701;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="EF_showHelper";
+					expression="_this setVariable ['EF_moduleCradle_showHelper',_value]";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=3;
+			nextID=4;
 		};
 		class Links
 		{
-			items=3;
+			items=4;
 			class Item0
 			{
 				linkID=0;
@@ -11566,25 +11642,14 @@ class Mission
 					type="Sync";
 				};
 			};
-		};
-	};
-	class VehicleInVehicleLinks
-	{
-		class LinkIDProvider
-		{
-			nextID=1;
-		};
-		class Links
-		{
-			items=1;
-			class Item0
+			class Item3
 			{
-				linkID=0;
-				item0=6910;
-				item1=6818;
+				linkID=3;
+				item0=6926;
+				item1=6925;
 				class CustomData
 				{
-					role=4;
+					type="Sync";
 				};
 			};
 		};
