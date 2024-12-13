@@ -423,7 +423,35 @@ blacklisted_from_arsenal = [
     "uns_MK18_low_US_Bag",
     "uns_STABO_US_Bag",
     "uns_Tripod_Bag",
-    "Uns_US_searchlight_Bag"
+    "Uns_US_searchlight_Bag",
+	
+//CDLC Blaclist
+"EF_B_HMG_01_weapon_high_MJTF_de",
+"EF_B_HMG_01_weapon_MJTF_des",
+"EF_B_GMG_01_weapon_MJTF_des",
+"I_CommandoMortar_weapon_RF",
+"O_CommandoMortar_weapon_R",
+"EF_B_CommandoMortar_weapon_MJTF_Wdl",
+"EF_B_CommandoMortar_weapon_MJTF_Des",
+"B_D_CTRG_CommandoMortar_weapon_RF",
+"I_E_CommandoMortar_weapon_RF",
+"B_CommandoMortar_weapon_RF",
+"EF_B_Mortar_01_support_MJTF_des",
+"EF_B_Mortar_01_weapon_MJTF_des",
+"EF_B_HMG_01_support_high_MJTF_de",
+"EF_B_HMG_01_support_MJTF_des",
+"ION_UAV_02_backpack_lxWS",
+"I_UAV_02_backpack_lxWS",
+"O_UAV_02_backpack_lxWS",
+"B_UAV_02_backpack_lxW",
+"ION_UAV_01_backpack_lxWS",
+"EF_B_UAV_01_backpack_coy",
+"B_G_UAV_02_IED_backpack_lxWS",
+"B_Tura_UAV_02_IED_backpack_lxWS",
+"CIV_UAV_01_backpack_lxWS"
+
+
+
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array

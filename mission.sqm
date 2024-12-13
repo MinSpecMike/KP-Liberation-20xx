@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1546;
+	toggles=522;
 	class ItemIDProvider
 	{
-		nextID=6927;
+		nextID=7276;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1087;
+		nextID=1100;
 	};
 	class Camera
 	{
-		pos[]={21184.201,997.57782,6119.9814};
-		dir[]={0.7032854,-0.67295629,0.2291939};
-		up[]={0.63983667,0.73967987,0.20851639};
-		aside[]={0.30985317,-1.0876101e-07,-0.95078814};
+		pos[]={7780.5645,103.54543,11669.028};
+		dir[]={0.87732673,-0.30620894,-0.36951113};
+		up[]={0.28220135,0.95196402,-0.11885715};
+		aside[]={-0.38815647,1.2223609e-08,-0.92159617};
 	};
 };
 binarizationWanted=0;
@@ -322,24 +322,23 @@ class Mission
 		class Item1
 		{
 			dataType="Trigger";
-			position[]={14486.271,11.110345,5883.7778};
+			position[]={14486.271,11.11001,5883.7778};
 			angle=6.1939626;
 			class Attributes
 			{
 				condition="true";
 				timeout[]={1.5,1.5,1.5};
 				interuptable=1;
-				effectMusic="LeadTrack01_F";
+				effectMusic="OST_01_RF";
 			};
 			id=331;
 			type="EmptyDetector";
-			atlOffset=0.00033473969;
 		};
 		class Item2
 		{
 			dataType="Trigger";
-			position[]={14492.171,7.9098182,5891.9238};
-			angle=6.1939669;
+			position[]={14492.17,7.9097791,5891.9238};
+			angle=6.1939631;
 			class Attributes
 			{
 				condition="!(player in thislist)";
@@ -348,7 +347,7 @@ class Mission
 				timeout[]={0.2,0.2,0.2};
 				interuptable=1;
 				activationBy="WEST";
-				effectMusic="EventTrack01_F_Curator";
+				effectMusic="jingle_02_RF";
 			};
 			id=332;
 			type="EmptyDetector";
