@@ -21,11 +21,11 @@
 class Header {
     gameType = "CTI";
     minPlayers = 1;
-    maxPlayers = 34;
+    maxPlayers = 36;
 };
 
 // Name of Mission author(s) and contributors. Obviously you can only add and not (!) remove someone.
-author = "[GREUH] Zbug & McKeewa, KP Liberation Dev Team";
+author = "[GREUH] Zbug & McKeewa, KP Liberation Dev Team, Sabre-One, MinSpecMike";
 
 
 /*
@@ -40,7 +40,7 @@ briefingName = $STR_MISSION_TITLE;
 overviewPicture = "res\lib.paa";
 
 // Text to be displayed below the overviewPicture on the mission selection screen
-overviewText = "www.killahpotatoes.de";
+overviewText = "https://discord.gg/baWzaXh9be";
 
 
 /*
@@ -56,7 +56,7 @@ onLoadName = $STR_MISSION_TITLE;
 loadScreen = "res\lib.paa";
 
 // Displays a message while the mission is loading below the loadScreen picture.
-onLoadMission = "www.killahpotatoes.de";
+onLoadMission = "https://discord.gg/baWzaXh9be";
 
 
 /*
@@ -153,7 +153,7 @@ allowFunctionsRecompile = "[0, 1] select (is3DENMultiplayer || is3DEN)";
 // Disable specific channels for voice and text communication.
 // MOTD and admin say have exception and will show in global.
 // 0 Global, 1 Side, 2 Command, 3 Group, 4 Vehicle, 5 Direct, 6 System
-disableChannels[] = {0};
+disableChannels[] = {};
 
 // Multiplayer setting that removes all playable units which do not have a human player.
 // When AI is disabled, a player logging out will not have AI take control of his character.
