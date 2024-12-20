@@ -11,6 +11,13 @@ GRLIB_whitelisted_tags = [
 // For example: "76561198016642627"
 // To know that information: https://steamid.io/
 GRLIB_whitelisted_steamids = [
+    "76561198035129314",    // Geist664
+    "76561198101976222",    // Marksman
+    "76561198135102402",    // Ozone
+    "76561198126052020",    // Min
+    "76561198340389512",    // Kaiser
+    "76561198061387646",    // Sam
+    "",                     // Mike
 
 ];
 
