@@ -138,7 +138,7 @@ KP_liberation_preset_blufor = 31;
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 0;
+KP_liberation_preset_opfor = 21;
 
 /* Resistance preset:
 0  = Custom (default vanilla FIA)
@@ -150,7 +150,7 @@ KP_liberation_preset_opfor = 0;
 6  = Unsung
 7  = CUP Takistani Locals
 8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 0;
+KP_liberation_preset_resistance = 9;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -161,7 +161,7 @@ KP_liberation_preset_resistance = 0;
 5  = Unsung
 6  = CUP Takistani Civilians
 7  = CUP Chernarussian Civilians */
-KP_liberation_preset_civilians = 0;
+KP_liberation_preset_civilians = 8;
 
 /* Which arsenal preset should be used?
 0  = Use the default blacklist method (defined below)
@@ -181,7 +181,7 @@ KP_liberation_preset_civilians = 0;
 14 = CSAT Green Hex arsenal preset
 15 = AAF arsenal preset
 16 = LDF arsenal preset */
-KP_liberation_arsenal = 0;
+KP_liberation_arsenal = 1;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
@@ -207,15 +207,15 @@ GRLIB_color_friendly = "ColorBLUFOR";                                   // Frien
 GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
-GRLIB_fob_range = 125;                                                  // Build range around the main FOB building.
-GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
+GRLIB_fob_range = 175;                                                  // Build range around the main FOB building.
+GRLIB_halo_altitude = 1750;                                             // Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
 GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 0.5;                                       // Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 30;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;                                               // Range to activate a sector.
-GRLIB_capture_size = 175;                                               // Range to capture a sector.
+GRLIB_capture_size = 200;                                               // Range to capture a sector.
 GRLIB_defended_buildingpos_part = 0.4;                                  // Multiplier for defenders in buildings.
 GRLIB_battlegroup_size = 6;                                             // Size of enemy battlegroups.
 GRLIB_vulnerability_timer = 1200;                                       // Time in seconds how long a captured sector is vulnerable to enemy troops.
