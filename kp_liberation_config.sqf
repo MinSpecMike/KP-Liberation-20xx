@@ -10,7 +10,7 @@ KP_liberation_medical_vehicles = [
     "B_W_UGV_01_medical_F",
     "B_W_APC_Wheeled_01_medical_F",
     "B_W_Heli_Transport_01_medevac_F",
-    
+    "B_Heli_Transport_03_unarmed_F",
     "C_Van_02_medevac_F",
     "CUP_B_BMP2_AMB_CDF",
     "CUP_B_BMP2_AMB_CZ_Des",
@@ -112,8 +112,9 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 27 = CUP Takistani Army
 28 = SFP (Woodland)
 29 = SFP (Desert)
-30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 0;
+30 = LDF (Contact DLC) 
+31 = USMC 2035 (Woodland) */
+KP_liberation_preset_blufor = 31;
 
 /* OPFOR preset:
 0  = Custom (default vanilla CSAT)
