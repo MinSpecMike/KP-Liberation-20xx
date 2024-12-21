@@ -7,10 +7,14 @@
 KP_liberation_medical_vehicles = [
     "B_T_Truck_01_medical_F",
     "B_Truck_01_medical_F",
+
+    // Marine WDL
     "B_W_UGV_01_medical_F",
     "B_W_APC_Wheeled_01_medical_F",
     "B_W_Heli_Transport_01_medevac_F",
     "B_Heli_Transport_03_unarmed_F",
+    "B_W_Truck_01_medical_F",
+
     "C_Van_02_medevac_F",
     "CUP_B_BMP2_AMB_CDF",
     "CUP_B_BMP2_AMB_CZ_Des",
@@ -265,18 +269,23 @@ KP_liberation_battlegroup_clearance = [
 The Steam UIDs entered in this array will allow corresponding players to access the commander actions (rights, production, etc.),
 even if they are not in the commander slot. */
 KP_liberation_commander_actions = [
-    /*
-    Example:
-    "1324678",
-    "5468711",
-    "2156347"
-    */
+    "76561198035129314",    // Geist664
+    "76561198101976222",    // Marksman
+    "76561198135102402",    // Ozone
+    "76561198126052020",    // Min
+    "76561198340389512",    // Kaiser
+    "76561198061387646"     // Sam
 ];
 
 /* Whitelist for BI support framework access.
 Same format as for the commander actions. */
 KP_liberation_suppMod_whitelist = [
-
+    "76561198035129314",    // Geist664
+    "76561198101976222",    // Marksman
+    "76561198135102402",    // Ozone
+    "76561198126052020",    // Min
+    "76561198340389512",    // Kaiser
+    "76561198061387646"     // Sam
 ];
 
 /* Array of radio tower classnames to place at radio tower sectors.
@@ -574,6 +583,15 @@ Format = ["classname", distance behind vehicle to unload crate, attachTo positio
 KPLIB_transportConfigs = [
     ["B_Heli_Transport_03_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
     ["B_Heli_Transport_03_unarmed_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
+
+    // Marine WDL
+    ["B_W_Truck_01_cargo_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_W_Truck_01_covered_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_W_Truck_01_flatbed_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_W_Truck_01_transport_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_W_Heli_Transport_03_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
+    ["B_W_Heli_Transport_03_unarmed_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
+
     ["B_T_Truck_01_cargo_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
     ["B_T_Truck_01_covered_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
     ["B_T_Truck_01_flatbed_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
@@ -746,8 +764,13 @@ KPLIB_transportConfigs = [
 /* Various other settings.
 Everything the AI troups should be able to resupply from. */
 KPLIB_aiResupplySources = [
-    "B_APC_Tracked_01_CRV_F",
     "B_Slingload_01_Ammo_F",
+
+    // Marine WDL
+    "B_W_APC_Tracked_01_CRV_F",
+    "B_W_Truck_01_ammo_F",
+
+    "B_APC_Tracked_01_CRV_F",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_ammo_F",
     "B_Truck_01_ammo_F",
@@ -789,8 +812,13 @@ KPLIB_aiResupplySources = [
 
 // Everything that can resupply other vehicles.
 vehicle_repair_sources = [
-    "B_APC_Tracked_01_CRV_F",
     "B_Slingload_01_Repair_F",
+
+    // Marine WDL
+    "B_W_APC_Tracked_01_CRV_F",
+    "B_W_Truck_01_Repair_F",
+
+    "B_APC_Tracked_01_CRV_F",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_Repair_F",
     "B_Truck_01_Repair_F",
@@ -831,8 +859,13 @@ vehicle_repair_sources = [
 ];
 
 vehicle_rearm_sources = [
-    "B_APC_Tracked_01_CRV_F",
     "B_Slingload_01_Ammo_F",
+
+    // Marine WDL
+    "B_W_APC_Tracked_01_CRV_F",
+    "B_W_Truck_01_ammo_F",
+
+    "B_APC_Tracked_01_CRV_F",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_ammo_F",
     "B_Truck_01_ammo_F",
@@ -872,8 +905,13 @@ vehicle_rearm_sources = [
 ];
 
 vehicle_refuel_sources = [
-    "B_APC_Tracked_01_CRV_F",
     "B_Slingload_01_Fuel_F",
+
+    // Marine WDL
+    "B_W_APC_Tracked_01_CRV_F",
+    "B_W_Truck_01_fuel_F",
+    
+    "B_APC_Tracked_01_CRV_F",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_fuel_F",
     "B_Truck_01_fuel_F",
@@ -915,6 +953,18 @@ vehicle_refuel_sources = [
 
 // Classnames of boats, so they can be built on water.
 boats_names = [
+
+    // Marine WDL
+    "EF_B_SDV_01_MJTF_Wdl",
+    "EF_B_Boat_Transport_01_MJTF_Wdl",
+    "I_C_Boat_Transport_02_F",
+    "EF_B_Boat_Armed_01_minigun_MJTF_Wdl",
+    "EF_B_CombatBoat_Unarmed_MJTF_Wdl",
+    "EF_B_CombatBoat_HMG_MJTF_Wdl",
+    "EF_B_CombatBoat_AT_MJTF_Wdl",
+    "EF_B_LCC_MJTF_Wdl",
+    "EF_B_LCC_SideLoad_MJTF_Wdl",
+
     "B_Boat_Armed_01_minigun_F",
     "B_Boat_Transport_01_F",
     "B_SDV_01_F",
@@ -945,6 +995,14 @@ boats_names = [
 // Classnames of artillery vehicles, which should be added to the support module
 // (Needed/Favorized as BIS_SUPP_eligible_Artillery from the support module isn't broadcasted over the network and may hold unwanted vehicles)
 KP_liberation_suppMod_artyVeh = [
+
+    // Marine WDL
+    "B_W_APC_Wheeled_01_mortar_lxWS",
+    "B_W_MBT_01_mlrs_F",
+    "B_W_MBT_01_arty_F",
+    "Aegis_B_W_TwinMortar_RF",
+    "Aegis_B_W_CommandoMortar_RF",
+    
     "B_G_Mortar_01_F",
     "B_MBT_01_arty_F",
     "B_MBT_01_mlrs_F",
@@ -1067,8 +1125,22 @@ KP_liberation_suppMod_artyVeh = [
 
 // Objects which are spawned as intel objects for pickup
 KPLIB_intelObjectClasses = [
-    "Land_File_research_F",
-    "Land_Document_01_F"
+    "Intel_File1_F",
+    "Intel_File2_F",
+    "Land_Wallet_01_F",
+    "Intel_Photos_F",
+    "Leaflet_05_New_F",
+    "Leaflet_05_Stack_F",
+    "Leaflet_05_F",
+    "Aegis_Land_Portable_Radio_01_olive_F",
+    "Land_Tablet_02_F",
+    "Land_PortableServer_01_olive_F",
+    "Land_MultiScreenComputer_01_olive_F",
+    "Land_Laptop_03_olive_F",
+    "Land_IPPhone_01_olive_F",
+    "Land_Computer_01_olive_F",
+    "Land_MobilePhone_smart_F",
+    "Land_MobilePhone_old_F"
 ];
 
 // Classnames of buildings inside military sectors, which are valid to hold intel items
