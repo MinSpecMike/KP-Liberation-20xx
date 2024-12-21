@@ -7,6 +7,10 @@
 KP_liberation_medical_vehicles = [
     "B_T_Truck_01_medical_F",
     "B_Truck_01_medical_F",
+    "B_W_UGV_01_medical_F",
+    "B_W_APC_Wheeled_01_medical_F",
+    "B_W_Heli_Transport_01_medevac_F",
+    
     "C_Van_02_medevac_F",
     "CUP_B_BMP2_AMB_CDF",
     "CUP_B_BMP2_AMB_CZ_Des",
