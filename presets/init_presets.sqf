@@ -87,6 +87,7 @@ switch (KP_liberation_preset_civilians) do {
     case  5: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\unsung.sqf";};
     case  6: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\CUP_TakiCivs.sqf";};
     case  7: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\CUP_ChernoCivs.sqf";};
+    case  8: {[] call compileFinal preprocessFileLineNumbers "presets\civilians\Western_European.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\civilians\custom.sqf";};
 };
 
