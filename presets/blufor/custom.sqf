@@ -72,7 +72,7 @@ infantry_units = [
     ["B_W_Recon_AR_F",30,0,0],                                              // Recon Autorifleman
     ["B_W_Recon_MG_F",30,0,0],                                              // Recon Gunner
     ["B_W_Recon_M_F",25,0,0],                                               // Marksman
-	["B_W_Recon_Sharpshooter_F",30,0,0]                                     // Sharpshooter
+	["B_W_Recon_Sharpshooter_F",30,0,0],                                    // Sharpshooter
     ["B_W_Recon_Medic_F",35,0,0],                                           // Recon Paramedic
     ["B_W_Recon_Exp_F",40,0,0],                                             // Recon Demo Specialist   
     ["B_W_ghillie_spotter_wdl_F",25,0,0],                                   // Spotter
