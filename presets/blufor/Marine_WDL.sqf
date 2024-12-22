@@ -380,10 +380,10 @@ elite_vehicles = [
     "B_W_Heli_Light_01_dynamicLoadout_F",                               // AH-9 Pawnee
     "B_W_UAV_03_dynamicLoadout_F",                                      // MQ-12 Falcon
     "B_W_MBT_01_mlrs_F",                                                // M5 Sandstorm MLRS
-    "B_W_MBT_01_arty_F"                                                 // M4 Scorcher
-    "B_W_abramsx"                                                       // M3A1 Knight
-    "B_W_MBT_01_TUSK_F"                                                 // M2A4 Slammer UP
-    "B_W_MBT_01_cannon_F"                                               // M2A4 Slammer
-    "B_W_AFV_Wheeled_01_up_cannon_F"                                    // Rhino MGS UP
+    "B_W_MBT_01_arty_F",                                                // M4 Scorcher
+    "B_W_abramsx",                                                      // M3A1 Knight
+    "B_W_MBT_01_TUSK_F",                                                // M2A4 Slammer UP
+    "B_W_MBT_01_cannon_F",                                              // M2A4 Slammer
+    "B_W_AFV_Wheeled_01_up_cannon_F",                                   // Rhino MGS UP
     "B_W_APC_Tracked_01_AA_F"                                           // Cheetah
 ];
