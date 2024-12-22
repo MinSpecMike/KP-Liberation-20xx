@@ -125,7 +125,7 @@ heavy_vehicles = [
     ["B_W_APC_Tracked_01_rcws_F",300,325,300],                              // Panther
     ["B_W_APC_Tracked_01_AA_F",300,375,300],                                // Cheetah
     ["B_W_AFV_Wheeled_01_cannon_F",250,300,250],                            // Rhino MGS
-    ["B_W_AFV_Wheeled_01_up_cannon_F",250,350,250]                          // Rhino MGS UP
+    ["B_W_AFV_Wheeled_01_up_cannon_F",250,350,250],                         // Rhino MGS UP
     ["B_W_MBT_01_cannon_F",400,425,400],                                    // M2A4 Slammer
     ["B_W_MBT_01_TUSK_F",450,450,450],                                      // M2A4 Slammer
     ["B_W_abramsx",500,500,500],                                            // M3A1 Knight
