@@ -44,7 +44,7 @@ KP_liberation_guerilla_weapons_1 = [
     ["arifle_XMS_GL_Gray_lxWS","30Rnd_556x45_Stanag_Tracer_Yellow",4,"optic_ERCO_blk_F",""],
     ["arifle_XMS_Gray_lxWS","30Rnd_556x45_Stanag_Tracer_Yellow",4,"optic_ERCO_blk_F",""],
     ["sgun_aa40_lxWS","20Rnd_12Gauge_AA40_Pellets_lxWS",3,"optic_Holosight_smg_blk_F",""],
-    ["LMG_03_F","200Rnd_556x45_Box_Tracer_F",2,"[[["LMG_03_F","","","ef_optic_mbs",""],
+    ["LMG_03_F","200Rnd_556x45_Box_Tracer_F",2,"ef_optic_mbs",""],
     ["GL_XM25_F","5Rnd_25x40mm_HE",7,"",""],
     ["SMG_04_blk_F","40Rnd_460x30_Mag_F",4,"optic_r1_high_lxWS",""],
     ["Aegis_arifle_SR25_blk_F","Aegis_20Rnd_762x51_Tracer_Yellow_SMAG",4,"optic_AMS","bipod_01_F_blk"],
