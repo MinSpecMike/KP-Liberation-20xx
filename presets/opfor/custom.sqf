@@ -7,170 +7,221 @@
 */
 
 // Enemy infantry classes
-opfor_officer = "E22_O_RAF_Officer_Field_F";                                     // Officer
-opfor_squad_leader = "E22_O_RAF_Soldier_SL_F";                                   // Squad Leader
-opfor_team_leader = "E22_O_RAF_Soldier_TL_F";                                    // Team Leader
-opfor_sentry = "E22_O_RAF_Soldier_Light_F";                                      // Rifleman (Lite)
-opfor_rifleman = "E22_O_RAF_Soldier_F";                                          // Rifleman
-opfor_rpg = "E22_O_RAF_Soldier_LAT_F";                                           // Rifleman (LAT)
-opfor_grenadier = "E22_O_RAF_Soldier_GL_F";                                      // Grenadier
-opfor_machinegunner = "E22_O_RAF_Soldier_AR_F";                                  // Autorifleman
-opfor_heavygunner = "E22_O_RAF_RadioOperator_F";                                 // Radio Operator
-opfor_marksman = "E22_O_RAF_Soldier_M_F";                                        // Marksman
-opfor_sharpshooter = "E22_O_RAF_Sharpshooter_F";                                 // Sharpshooter
-opfor_sniper = "E22_O_RAF_ghillie_lesnoy_F";                                     // Sniper
-opfor_at = "E22_O_RAF_Soldier_AT_F";                                             // AT Specialist
-opfor_aa = "E22_O_RAF_Soldier_AA_F";                                             // AA Specialist
-opfor_medic = "E22_O_RAF_Soldier_CLS_F";                                         // Combat Life Saver
-opfor_engineer = "E22_O_RAF_Soldier_ENG_F";                                      // Engineer
-opfor_paratrooper = "E22_O_RAF_Soldier_PARA_F";                                  // Paratrooper
+opfor_officer = "UK3CB_TKM_O_WAR";                                     // Officer
+opfor_squad_leader = "UK3CB_TKM_O_SL";                                 // Squad Leader
+opfor_team_leader = "UK3CB_TKM_O_TL";                                  // Team Leader
+opfor_sentry = "UK3CB_TKM_O_RIF_2";                                    // Rifleman (Lite)
+opfor_rifleman = "UK3CB_TKM_O_RIF_1";                                  // Rifleman
+opfor_rpg = "UK3CB_TKM_O_LAT";                                         // Rifleman (LAT)
+opfor_grenadier = "UK3CB_TKM_O_GL";                                    // Grenadier
+opfor_machinegunner = "UK3CB_TKM_O_LMG";                               // Autorifleman
+opfor_heavygunner = "UK3CB_TKM_O_MG";                                  // Radio Operator
+opfor_marksman = "UK3CB_TKM_O_SNI";                                    // Marksman
+opfor_sharpshooter = "UK3CB_TKM_O_SNI";                                // Sharpshooter
+opfor_sniper = "UK3CB_TKM_O_SNI";                                      // Sniper
+opfor_at = "UK3CB_TKM_O_AT";                                           // AT Specialist
+opfor_aa = "UK3CB_TKM_O_AA";                                           // AA Specialist
+opfor_medic = "UK3CB_TKM_O_MD";                                        // Medic
+opfor_engineer = "UK3CB_TKM_O_ENG";                                    // Engineer
+opfor_paratrooper = "UK3CB_TKM_O_RIF_3";                               // Paratrooper
 
 // Enemy vehicles used by secondary objectives.
-opfor_mrap = "E22_O_RAF_MRAP_02_F";                                              // Ifrit
-opfor_mrap_armed = "E22_O_RAF_MRAP_02_hmg_F";                                    // Ifrit (HMG)
-opfor_transport_helo = "E22_O_RAF_Heli_Transport_04_bench_F";                    // Mi-290 Taru (Bench)
-opfor_transport_truck = "E22_O_RAF_Truck_03_covered_F";                          // Tempest Transport (Covered)
-opfor_ammobox_transport = "E22_O_RAF_Truck_03_transport_F";                      // Tempest Transport (Open) -> Has to be able to transport resource crates!
-opfor_fuel_truck = "E22_O_RAF_Truck_03_fuel_F";                                  // Tempest Fuel
-opfor_ammo_truck = "E22_O_RAF_Truck_03_ammo_Fs";                                 // Tempest Ammo
-opfor_fuel_container = "E22_B_Land_Pod_RAF_Heli_Transport_04_fuel_F";            // Taru Fuel Pod
-opfor_ammo_container = "E22_B_Land_Pod_RAF_Heli_Transport_04_ammo_F";            // Taru Ammo Pod
-opfor_flag = "Flag_Russia_F";                                                    // Flag
+opfor_mrap = "UK3CB_TKM_O_BRDM2_UM";                                   // MRAP
+opfor_mrap_armed = "UK3CB_TKM_O_BRDM2";                                // MRAP Armed 
+opfor_transport_helo = "UK3CB_TKC_C_Mi8AMT";                           // Helicopter Transport
+opfor_transport_truck = "UK3CB_TKM_O_V3S_Closed";                      // Transport Truck
+opfor_ammobox_transport = "UK3CB_TKM_O_V3S_Recovery";                  // Transport Truck -> Has to be able to transport resource crates!
+opfor_fuel_truck = "UK3CB_TKM_O_V3S_Refuel";                           // Fuel Truck
+opfor_ammo_truck = "UK3CB_TKM_O_V3S_Reammo";                           // Ammo Truck
+opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";            // Fuel Pod
+opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";            // Ammo Pod
+opfor_flag = "Flag_TKM_O";                                             // Flag
 
 /* Adding a value to these arrays below will add them to a one out of however many in the array, random pick chance.
 Therefore, adding the same value twice or three times means they are more likely to be chosen more often. */
 
-/* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders.
+/* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders. MAX of 10
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 militia_squad = [
-    "E22_O_RAF_Soldier_MP_F",                                                    // Military Police Officer
-    "E22_O_RAF_RadioOperator_F",                                                 // Radio Operator
-    "E22_O_RAF_Soldier_Light_F",                                                 // Rifleman (Light)
-    "E22_O_RAF_Soldier_Light_F",                                                 // Rifleman (Light)
-    "E22_O_RAF_Soldier_F",                                                       // Rifleman
-    "E22_O_RAF_Soldier_F",                                                       // Rifleman 
-    "E22_O_RAF_Soldier_LAT_F",                                                   // Rifleman (AT)
-    "E22_O_RAF_Soldier_AR_F",                                                    // Autorifleman
-    "E22_O_RAF_Soldier_CLS_F",                                                   // Combat Life Saver
-    "E22_O_RAF_Soldier_ENG_FI"                                                   // Engineer 
+    "UK3CB_TKM_O_WAR",
+    "UK3CB_TKM_O_RIF_2",
+    "UK3CB_TKM_O_RIF_2",
+    "UK3CB_TKM_O_LAT",
+    "UK3CB_TKM_O_LAT",
+    "UK3CB_TKM_O_LMG",
+    "UK3CB_TKM_O_SNI",
+    "UK3CB_TKM_O_MD",
+    "UK3CB_TKM_O_GL",
+    "UK3CB_TKM_O_ENG"
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 militia_vehicles = [
-    "E22_O_RAF_LSV_02_armed_F",                                                  // Qilin (armed)
-	"E22_O_RAF_MRAP_02_hmg_F"									                 // MRAP HMG
+    "",
+    "",
+    "",
+    "UK3CB_TKM_O_UAZ_Dshkm", 
+    "UK3CB_TKM_O_UAZ_AGS30", 
+    "UK3CB_TKM_O_Pickup_M2", 
+    "UK3CB_TKM_O_Pickup_DSHKM", 
+    "UK3CB_TKM_O_LR_M2", 
+    "UK3CB_TKM_O_LR_AGS30", 
+    "UK3CB_TKM_O_Hilux_Pkm", 
+    "UK3CB_TKM_O_Hilux_M2", 
+    "UK3CB_TKM_O_Hilux_Dshkm", 
+    "UK3CB_TKM_O_Hilux_GMG", 
+    "UK3CB_TKM_O_Datsun_Pkm"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 opfor_vehicles = [
-    "E22_O_RAF_LSV_02_armed_F",                                                   // Quilin (Armed)
-    "E22_O_RAF_LSV_02_AT_F",                                                      // Quilin (AT)
-    "E22_O_RAF_MRAP_02_hmg_F",                                                    // Ifrit (HMG)
-    "E22_O_RAF_MRAP_02_gmg_F",                                                    // Ifrit (GMG)
-    "E22_O_RAF_APC_Wheeled_02_rcws_F",                                            // Marid
-    "E22_O_RAF_APC_Tracked_02_cannon_AT_F",                                       // BTR-K
-    "E22_O_RAF_APC_Tracked_02_cannon_AA_F",                                       // BTR-K
-    "Aegis_O_R_APC_Tracked_02_30mm_lxWS",                                         // BTR-T
-    "E22_O_RAF_APC_Wheeled_04_cannon_F",                                          // BTR-90A
-    "E22_O_RAF_APC_Tracked_02_AA_F",                                              // ZSU-35-2
-    "Aegis_O_R_Truck_02_aa_F",                                                    // ZU-23-2
-    "E22_O_RAF_MBT_02_cannon_F",                                                  // T-100
-    "E22_O_RAF_MBT_04_cannon_F",                                                  // T-140
-    "E22_O_RAF_MBT_04_command_F",                                                 // T-140K
-    "Aegis_O_R_MBT_02_Railgun_F",                                                 // T-100X
-    "O_R_APC_Wheeled_04_cannon_v2_F"                                              // 2S90M
+    "UK3CB_TKM_O_UAZ_Dshkm", 
+    "UK3CB_TKM_O_UAZ_AGS30", 
+    "UK3CB_TKM_O_Pickup_M2", 
+    "UK3CB_TKM_O_Pickup_DSHKM", 
+    "UK3CB_TKM_O_LR_M2", 
+    "UK3CB_TKM_O_LR_AGS30", 
+    "UK3CB_TKM_O_Hilux_Pkm", 
+    "UK3CB_TKM_O_Hilux_M2", 
+    "UK3CB_TKM_O_Hilux_Dshkm", 
+    "UK3CB_TKM_O_Hilux_GMG", 
+    "UK3CB_TKM_O_Datsun_Pkm",
+    "UK3CB_TKM_O_UAZ_SPG9", 
+    "UK3CB_TKM_O_LR_SF_M2", 
+    "UK3CB_TKM_O_LR_SF_AGS30", 
+    "UK3CB_TKM_O_LR_SPG9", 
+    "UK3CB_TKM_O_Hilux_Zu23", 
+    "UK3CB_TKM_O_Hilux_Zu23_Front", 
+    "UK3CB_TKM_O_Hilux_Spg9", 
+    "UK3CB_TKM_O_Hilux_Rocket", 
+    "UK3CB_TKM_O_Hilux_Mortar", 
+    "UK3CB_TKM_O_Hilux_Rocket_Arty", 
+    "UK3CB_TKM_O_BRDM2_HQ", 
+    "UK3CB_TKM_O_BRDM2_ATGM", 
+    "UK3CB_TKM_O_BRDM2", 
+    "UK3CB_TKM_O_MTLB_PKT", 
+    "UK3CB_TKM_O_MTLB_KPVT", 
+    "UK3CB_TKM_O_MTLB_BMP", 
+    "UK3CB_TKM_O_BTR60", 
+    "UK3CB_TKM_O_Ural_Zu23", 
+    "UK3CB_TKM_O_V3S_Zu23", 
+    "UK3CB_TKM_O_MTLB_ZU23"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 opfor_vehicles_low_intensity = [
-    "E22_O_RAF_LSV_02_armed_F",                                                   // Quilin (Armed)
-    "E22_O_RAF_LSV_02_AT_F",                                                      // Quilin (AT)
-    "E22_O_RAF_MRAP_02_hmg_F",                                                    // Ifrit (HMG)
-    "E22_O_RAF_MRAP_02_gmg_F",                                                    // Ifrit (GMG)
-    "E22_O_RAF_APC_Wheeled_02_rcws_F",                                            // Marid
-    "E22_O_RAF_APC_Wheeled_04_cannon_F",                                          // BTR-90A
-    "Aegis_O_R_Truck_02_aa_F",                                                    // ZU-23-2
-    "O_R_APC_Wheeled_04_cannon_v2_F"                                              // 2S90M
+    "UK3CB_TKM_O_UAZ_Dshkm", 
+    "UK3CB_TKM_O_UAZ_AGS30", 
+    "UK3CB_TKM_O_Pickup_M2", 
+    "UK3CB_TKM_O_Pickup_DSHKM", 
+    "UK3CB_TKM_O_LR_M2", 
+    "UK3CB_TKM_O_LR_AGS30", 
+    "UK3CB_TKM_O_Hilux_Pkm", 
+    "UK3CB_TKM_O_Hilux_M2", 
+    "UK3CB_TKM_O_Hilux_Dshkm", 
+    "UK3CB_TKM_O_Hilux_GMG", 
+    "UK3CB_TKM_O_Datsun_Pkm",
+    "UK3CB_TKM_O_UAZ_SPG9", 
+    "UK3CB_TKM_O_LR_SF_M2", 
+    "UK3CB_TKM_O_LR_SF_AGS30", 
+    "UK3CB_TKM_O_LR_SPG9",  
+    "UK3CB_TKM_O_Hilux_Spg9", 
+    "UK3CB_TKM_O_Hilux_Rocket", 
+    "UK3CB_TKM_O_Hilux_Mortar", 
+    "UK3CB_TKM_O_Hilux_Rocket_Arty", 
+    "UK3CB_TKM_O_BRDM2_HQ", 
+    "UK3CB_TKM_O_BRDM2_ATGM", 
+    "UK3CB_TKM_O_BRDM2", 
+    "UK3CB_TKM_O_MTLB_PKT", 
+    "UK3CB_TKM_O_MTLB_KPVT", 
+    "UK3CB_TKM_O_MTLB_BMP", 
+    "UK3CB_TKM_O_BTR60"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles = [
-    "E22_O_RAF_LSV_02_armed_F",                                                   // Quilin (Armed)
-    "E22_O_RAF_LSV_02_AT_F",                                                      // Quilin (AT)
-    "E22_O_RAF_MRAP_02_hmg_F",                                                    // Ifrit (HMG)
-    "E22_O_RAF_MRAP_02_gmg_F",                                                    // Ifrit (GMG)
-    "E22_O_RAF_APC_Wheeled_02_rcws_F",                                            // Marid
-    "E22_O_RAF_APC_Tracked_02_cannon_AT_F",                                       // BTR-K
-    "E22_O_RAF_APC_Tracked_02_cannon_AA_F",                                       // BTR-K
-    "Aegis_O_R_APC_Tracked_02_30mm_lxWS",                                         // BTR-T
-    "E22_O_RAF_APC_Wheeled_04_cannon_F",                                          // BTR-90A
-    "E22_O_RAF_APC_Tracked_02_AA_F",                                              // ZSU-35-2
-    "Aegis_O_R_Truck_02_aa_F",                                                    // ZU-23-2
-    "E22_O_RAF_MBT_02_cannon_F",                                                  // T-100
-    "E22_O_RAF_MBT_04_cannon_F",                                                  // T-140
-    "E22_O_RAF_MBT_04_command_F",                                                 // T-140K
-    "Aegis_O_R_MBT_02_Railgun_F",                                                 // T-100X
-    "O_R_APC_Wheeled_04_cannon_v2_F",                                             // 2S90M
-    "E22_O_RAF_Truck_02_transport_F",                                             // Zamak Transport
-    "E22_O_RAF_Truck_02_covered_F",                                               // Zamak Transport (Covered)
-    "E22_O_RAF_Truck_03_transport_F",                                             // Tempest Transport 
-    "E22_O_RAF_Truck_03_covered_F",                                               // Tempest Transport (Covered)
-    "E22_O_RAF_Heli_Light_02_unarmed_F",                                          // KA-60 Unarmed
-    "E22_O_RAF_Heli_Light_02_dynamicLoadout_F",                                   // KA-60 Armed
-    "E22_O_RAF_Heli_Transport_04_bench_F",                                        // Taru (Bench)
-    "E22_O_RAF_Heli_Transport_04_covered_F",                                      // Taru (Transport)
-    "E22_O_RAF_Heli_Attack_02_dynamicLoadout_F",                                  // MI-48 Kajman
-    "Aegis_O_R_Heli_Attack_04_F",                                                 // MI-35M                                    
-    "E22_O_RAF_Plane_CAS_02_dynamicLoadout_F",                                    // TO-199 Neophron
-    "E22_O_RAF_Plane_Fighter_02_F"                                                // TO-201 Shikra
+    "UK3CB_TKM_O_UAZ_Dshkm", 
+    "UK3CB_TKM_O_UAZ_AGS30", 
+    "UK3CB_TKM_O_Pickup_M2", 
+    "UK3CB_TKM_O_Pickup_DSHKM", 
+    "UK3CB_TKM_O_LR_M2", 
+    "UK3CB_TKM_O_LR_AGS30", 
+    "UK3CB_TKM_O_Hilux_Pkm", 
+    "UK3CB_TKM_O_Hilux_M2", 
+    "UK3CB_TKM_O_Hilux_Dshkm", 
+    "UK3CB_TKM_O_Hilux_GMG", 
+    "UK3CB_TKM_O_Datsun_Pkm",
+    "UK3CB_TKM_O_UAZ_SPG9", 
+    "UK3CB_TKM_O_LR_SF_M2", 
+    "UK3CB_TKM_O_LR_SF_AGS30", 
+    "UK3CB_TKM_O_LR_SPG9", 
+    "UK3CB_TKM_O_Hilux_Zu23", 
+    "UK3CB_TKM_O_Hilux_Zu23_Front", 
+    "UK3CB_TKM_O_Hilux_Spg9", 
+    "UK3CB_TKM_O_Hilux_Rocket", 
+    "UK3CB_TKM_O_Hilux_Mortar", 
+    "UK3CB_TKM_O_Hilux_Rocket_Arty", 
+    "UK3CB_TKM_O_BRDM2_HQ", 
+    "UK3CB_TKM_O_BRDM2_ATGM", 
+    "UK3CB_TKM_O_BRDM2", 
+    "UK3CB_TKM_O_MTLB_PKT", 
+    "UK3CB_TKM_O_MTLB_KPVT", 
+    "UK3CB_TKM_O_MTLB_BMP", 
+    "UK3CB_TKM_O_BTR60", 
+    "UK3CB_TKM_O_Ural_Zu23", 
+    "UK3CB_TKM_O_V3S_Zu23", 
+    "UK3CB_TKM_O_MTLB_ZU23",
+    "UK3CB_TKM_O_BMP1", 
+    "UK3CB_MEI_O_T55",
+    "UK3CB_TKM_O_Ural_Covered", 
+    "UK3CB_TKM_O_Ural_Open"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 opfor_battlegroup_vehicles_low_intensity = [
-    "E22_O_RAF_LSV_02_armed_F",                                                   // Quilin (Armed)
-    "E22_O_RAF_LSV_02_AT_F",                                                      // Quilin (AT)
-    "E22_O_RAF_MRAP_02_hmg_F",                                                    // Ifrit (HMG)
-    "E22_O_RAF_MRAP_02_gmg_F",                                                    // Ifrit (GMG)
-    "E22_O_RAF_APC_Wheeled_02_rcws_F",                                            // Marid
-    "E22_O_RAF_APC_Wheeled_04_cannon_F",                                          // BTR-90A
-    "Aegis_O_R_Truck_02_aa_F",                                                    // ZU-23-2
-    "O_R_APC_Wheeled_04_cannon_v2_F",                                             // 2S90M
-    "E22_O_RAF_Truck_02_transport_F",                                             // Zamak Transport
-    "E22_O_RAF_Truck_02_covered_F",                                               // Zamak Transport (Covered)
-    "E22_O_RAF_Truck_03_transport_F",                                             // Tempest Transport 
-    "E22_O_RAF_Truck_03_covered_F",                                               // Tempest Transport (Covered)
-    "E22_O_RAF_Heli_Light_02_unarmed_F",                                          // KA-60 Unarmed
-    "E22_O_RAF_Heli_Light_02_dynamicLoadout_F",                                   // KA-60 Armed
-    "E22_O_RAF_Heli_Transport_04_bench_F",                                        // Taru (Bench)
-    "E22_O_RAF_Heli_Transport_04_covered_F"                                       // Taru (Transport)
+    "UK3CB_TKM_O_UAZ_Dshkm", 
+    "UK3CB_TKM_O_UAZ_AGS30", 
+    "UK3CB_TKM_O_Pickup_M2", 
+    "UK3CB_TKM_O_Pickup_DSHKM", 
+    "UK3CB_TKM_O_LR_M2", 
+    "UK3CB_TKM_O_LR_AGS30", 
+    "UK3CB_TKM_O_Hilux_Pkm", 
+    "UK3CB_TKM_O_Hilux_M2", 
+    "UK3CB_TKM_O_Hilux_Dshkm", 
+    "UK3CB_TKM_O_Hilux_GMG", 
+    "UK3CB_TKM_O_Datsun_Pkm",
+    "UK3CB_TKM_O_UAZ_SPG9", 
+    "UK3CB_TKM_O_LR_SF_M2", 
+    "UK3CB_TKM_O_LR_SF_AGS30", 
+    "UK3CB_TKM_O_LR_SPG9",  
+    "UK3CB_TKM_O_Hilux_Spg9", 
+    "UK3CB_TKM_O_Hilux_Rocket", 
+    "UK3CB_TKM_O_Hilux_Mortar", 
+    "UK3CB_TKM_O_Hilux_Rocket_Arty", 
+    "UK3CB_TKM_O_BRDM2_HQ", 
+    "UK3CB_TKM_O_BRDM2_ATGM", 
+    "UK3CB_TKM_O_BRDM2", 
+    "UK3CB_TKM_O_MTLB_PKT", 
+    "UK3CB_TKM_O_MTLB_KPVT", 
+    "UK3CB_TKM_O_MTLB_BMP", 
+    "UK3CB_TKM_O_BTR60",
+    "UK3CB_TKM_O_Ural_Covered", 
+    "UK3CB_TKM_O_Ural_Open"
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.    */
 opfor_troup_transports = [
-    "E22_O_RAF_APC_Wheeled_02_rcws_F",                                            // Marid
-    "E22_O_RAF_Truck_02_transport_F",                                             // Zamak Transport
-    "E22_O_RAF_Truck_02_covered_F",                                               // Zamak Transport (Covered)
-    "E22_O_RAF_Truck_03_transport_F",                                             // Tempest Transport 
-    "E22_O_RAF_Truck_03_covered_F",                                               // Tempest Transport (Covered)
-    "E22_O_RAF_Heli_Light_02_unarmed_F",                                          // KA-60 Unarmed
-    "E22_O_RAF_Heli_Light_02_dynamicLoadout_F",                                   // KA-60 Armed
-    "E22_O_RAF_Heli_Transport_04_bench_F",                                        // Taru (Bench)
-    "E22_O_RAF_Heli_Transport_04_covered_F"                                       // Taru (Transport)
+    "UK3CB_TKM_O_Ural_Covered", 
+    "UK3CB_TKM_O_Ural_Open"
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 opfor_choppers = [
-    "E22_O_RAF_Heli_Light_02_unarmed_F",                                          // KA-60 Unarmed
-    "E22_O_RAF_Heli_Light_02_dynamicLoadout_F",                                   // KA-60 Armed
-    "E22_O_RAF_Heli_Transport_04_bench_F",                                        // Taru (Bench)
-    "E22_O_RAF_Heli_Transport_04_covered_F",                                      // Taru (Transport)
-    "E22_O_RAF_Heli_Attack_02_dynamicLoadout_F",                                  // MI-48 Kajman
-    "Aegis_O_R_Heli_Attack_04_F"                                                  // MI-35M
+    
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 opfor_air = [
-    "E22_O_RAF_Plane_CAS_02_dynamicLoadout_F",                                    // TO-199 Neophron
-    "E22_O_RAF_Plane_Fighter_02_F"                                                // TO-201 Shikra
+    
 ];
