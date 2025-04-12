@@ -12,7 +12,7 @@ KP_liberation_guerilla_units = [
     "I_G_Soldier_SL_F",
     "I_G_Soldier_TL_F",
     "I_G_Soldier_F",
-    "I_G_Soldier_LAT_RF",
+    "I_G_Soldier_LAT_F",
     "I_G_Soldier_M_F",
     "I_G_Soldier_AR_F",
     "I_G_Soldier_GL_F",
