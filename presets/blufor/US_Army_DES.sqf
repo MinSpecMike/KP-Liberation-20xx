@@ -73,64 +73,65 @@ infantry_units = [
 ];
 
 light_vehicles = [
-    ["rhsusf_mrzr4_d",50,0,50],                                          // Quad Bike
-    ["rhsusf_m1240a1_m240_uik_usarmy_d",75,0,75],                                        // Pickup
-    ["rhsusf_m1240a1_m2_uik_usarmy_d",75,25,75],                                   // Pickup (MMG)
-    ["rhsusf_m1240a1_mk19_uik_usarmy_d",75,50,75],                                    // Pickup (AT)
-    ["rhsusf_m1240a1_m2crows_usarmy_d",75,100,75],                                  // Pickup (AA)
-    ["rhsusf_m1240a1_mk19crows_usarmy_d",75,0,50],                                         // Prowler (Light)
-    ["rhsusf_M1078A1P2_B_D_fmtv_usarmy",75,0,50],                                       // Prowler
-    ["rhsusf_M1078A1P2_B_D_flatbed_fmtv_usarmy",75,25,50],                                        // Prowler (HMG)
-    ["rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy",75,50,50],                                           // Prowler (AT)
-    ["rhsusf_M1078A1P2_B_M2_D_flatbed_fmtv_usarmy",100,0,100],                                            // Hunter 
-    ["rhsusf_M1083A1P2_B_D_fmtv_usarmy",125,75,100],                                       // Hunter (HMG)
-    ["rhsusf_M1083A1P2_B_D_flatbed_fmtv_usarmy",125,100,100],                                      // Hunter (GMG)
-    ["rhsusf_M1083A1P2_B_M2_D_flatbed_fmtv_usarmy",125,125,100],                               // Hunter (FSV)
-    ["rhsusf_M1084A1P2_B_D_fmtv_usarmy",125,150,100],                                // Hunter (AT)
-    ["rhsusf_M1084A1P2_B_M2_D_fmtv_usarmy",125,150,100],                              // Hunter (LAAD)
-    ["rhsusf_M977A4_BKIT_usarmy_d",150,0,150],                                   // HEMTT Transport (Flatbed)
-	["rhsusf_M977A4_BKIT_M2_usarmy_d",150,0,150],                                 // HEMTT Transport 
-    ["rhsusf_stryker_m1126_m2_d",150,0,150],                                   // HEMTT Transport (Covered)
-    ["rhsusf_stryker_m1126_mk19_d",50,0,50],                                       // SDV 
-	["rhsusf_stryker_m1134_d",75,0,75]                            // Assault Boat 
+    ["rhsusf_mrzr4_d",75,0,75],                                                // MRZR4
+    ["rhsusf_m1240a1_m240_uik_usarmy_d",100,50,100],                           // MRAP (M240)
+    ["rhsusf_m1240a1_m2_uik_usarmy_d",100,100,100],                            // MRAP (M2)
+    ["rhsusf_m1240a1_mk19_uik_usarmy_d",100,150,100],                          // MRAP (Mk19)
+    ["rhsusf_m1240a1_m2crows_usarmy_d",100,175,100],                           // MRAP (CROWS/M2)
+    ["rhsusf_m1240a1_mk19crows_usarmy_d",100,175,100],                         // MRAP (CROWS/MK19)
+    ["rhsusf_M1078A1P2_B_D_fmtv_usarmy",150,0,50],                             // FMTV
+    ["rhsusf_M1078A1P2_B_D_flatbed_fmtv_usarmy",150,0,50],                     // FMTV (Flatbed)
+    ["rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy",150,100,50],                        // FMTV (M2)
+    ["rhsusf_M1078A1P2_B_M2_D_flatbed_fmtv_usarmy",150,100,100],               // FMTV (Flatbed/M2)
+    ["rhsusf_M1083A1P2_B_D_fmtv_usarmy",150,0,100],                            // FMTV 
+    ["rhsusf_M1083A1P2_B_D_flatbed_fmtv_usarmy",150,0,100],                    // FMTV (Flatbed)
+    ["rhsusf_M1083A1P2_B_M2_D_flatbed_fmtv_usarmy",150,100,100],               // FMTV (Flatbed/M2)
+    ["rhsusf_M1084A1P2_B_D_fmtv_usarmy",150,0,100],                            // FMTV
+    ["rhsusf_M1084A1P2_B_M2_D_fmtv_usarmy",150,100,150],                       // FMTV (M2)
+    ["rhsusf_M977A4_BKIT_usarmy_d",175,0,175],                                 // HEMTT 
+	["rhsusf_M977A4_BKIT_M2_usarmy_d",175,100,175],                            // HEMTT (M2) 
+    ["rhsusf_stryker_m1126_m2_d",200,150,250],                                 // STRYKER (CROWS/M2)
+    ["rhsusf_stryker_m1126_mk19_d",200,175,250],                               // STRYKER (CROWS/MK19)
+	["rhsusf_stryker_m1134_d",250,225,250],                                    // STRYKER (ATGM)
+    ["m1128_mgs_b",275,275,275]                                                // STRYKER MGS
 ];
 
 heavy_vehicles = [
-	["RHS_M2A3",200,175,200],                         // Marshall
-	["RHS_M2A3_BUSKI",200,200,200],                        // Marshall (ATGM) 
-	["RHS_M2A3_BUSKIII",200,150,200],                        // Marshall (Command) 
-	["rhsusf_m1a2sep1d_usarmy",200,175,200],                         // Marshall (Mortar)
-    ["rhsusf_m1a2sep1tuskid_usarmy",200,0,200],                             // Marshall (Medical)
-    ["rhsusf_m1a2sep1tuskiid_usarmy",250,250,250],                                     // AAV-9 Mack
-    ["rhsusf_m1a2sep2d_usarmy",250,300,250],                                // AAV-9A1 Mack
-    ["rhsusf_M142_usarmy_D",300,325,300],                              // Panther
-    ["UK3CB_B_M270_MLRS_HE_DES",300,375,300],                                // Cheetah
-    ["UK3CB_B_M270_MLRS_Cluster_DES",250,300,250],                            // Rhino MGS
-    ["rhsusf_m109d_usarmy",250,350,250]                         // Rhino MGS UP
+	["RHS_M2A3",300,300,300],                                                  // Bradley
+	["RHS_M2A3_BUSKI",325,300,325],                                            // Bradley (BUSK1) 
+	["RHS_M2A3_BUSKIII",350,300,350],                                          // Bradley (BUSK3) 
+	["rhsusf_m1a2sep1d_usarmy",400,400,400],                                   // Abrams SEPv1
+    ["rhsusf_m1a2sep1tuskid_usarmy",425,400,425],                              // Abrams SEPv1 (TUSK1)
+    ["rhsusf_m1a2sep1tuskiid_usarmy",450,400,450],                             // Abrams SEPv1 (TUSK2)
+    ["rhsusf_m1a2sep2d_usarmy",450,450,450],                                   // Abrams SEPv2
+    ["rhsusf_M142_usarmy_D",500,500,500],                                      // HIMARS
+    ["UK3CB_B_M270_MLRS_HE_DES",500,500,500],                                  // MLRS (HE)
+    ["UK3CB_B_M270_MLRS_Cluster_DES",500,500,500],                             // MLRS (Cluster)
+    ["rhsusf_m109d_usarmy",500,500,500]                                        // Paladin
 ];
 
 air_vehicles = [
-    ["RHS_MELB_MH6M",25,0,25],                                               // AR-2 Darter
-    ["RHS_MELB_AH6M",50,0,25],                                       // AL-6 Pelican (Medical)
-	["RHS_AH64D",75,50,25],                                     // AP-5 Bustard
-	["RHS_UH60M_d",25,0,25],                                               // AL-6 
-    ["vtx_UH60M_SLICK",350,350,350],                            // MQ-12 Falcon
-    ["vtx_MH60M",250,0,250],                                      // MH-9 Hummingbird
-    ["vtx_MH60M_DAP",250,250,250],                     // AH-9 Pawnee 
-	["vtx_MH60M_DAP_MLASS",350,450,350],                                    // AH-99J Python 
-    ["vtx_HH60",350,400,350],            // AH-99 Blackfoot
-	["RHS_CH_47F_10_cargo",450,500,450],                             // AH-64E Apache
-	["TF373_SOAR_MH47G",375,100,375],	                    // UH-80 Ghosthawk
-    ["FIR_F16C_Blank",375,100,375],                        // UH-80 Ghosthawk (MEV) 
-	["FIR_F16D_Blank",475,100,475],                                // CH-67 Huron
-    ["FIR_A10C_MD",350,350,350],                            // MQ-4A Greyhawk
-    ["FIR_F15C_Blank",550,550,550],                                     // MQ-9A Albatross
-    ["FIR_F15E_Blank",450,450,450],                                           // UCAV Sentinel
-    ["FIR_F15EX_Blank",1000,1000,1000],                     // A-164 Wipeout 
-    ["FIR_F22_Blank",1000,1000,1000],                              // F-35F Lightning II
-    ["RHS_C130J",1000,1000,1000],                              // F/A-181 Black Wasp II
-    ["RHS_C130J_Cargo",600,0,600],                                                // CV-22 Osprey
-    ["B_UAV_02_dynamicLoadout_F",1500,1500,1500]                                  // AV-44X Blackfish
+    ["RHS_MELB_MH6M",600,0,600],                                               // MH-6M
+    ["RHS_MELB_AH6M",600,500,600],                                             // AH-6M
+	["RHS_AH64D",750,750,750],                                                 // AH-64D
+	["RHS_UH60M_d",750,250,750],                                               // UH-60M (RHS) 
+    ["vtx_UH60M_SLICK",750,250,750],                                           // UH-60M (Hatchet)
+    ["vtx_MH60M",750,250,750],                                                 // MH-60M
+    ["vtx_MH60M_DAP",750,500,750],                                             // MH-60M (DAP) 
+	["vtx_MH60M_DAP_MLASS",750,750,750],                                       // MH-60M (DAP MLASS) 
+    ["vtx_HH60",750,250,750],                                                  // HH-60G/M
+	["RHS_CH_47F_10_cargo",850,250,850],                                       // CH-47F (Cargo)
+	["TF373_SOAR_MH47G",850,300,850],	                                       // MH-47G
+    ["FIR_F16C_Blank",1000,1000,1000],                                         // F-16C 
+	["FIR_F16D_Blank",1000,1000,1000],                                         // F-16D
+    ["FIR_A10C_MD",1500,1500,1500],                                            // A-10C
+    ["FIR_F15C_Blank",1000,1000,1000],                                         // F-15C
+    ["FIR_F15E_Blank",1500,1500,1500],                                         // F-15E
+    ["FIR_F15EX_Blank",1500,1500,1500],                                        // F-15 EX 
+    ["FIR_F22_Blank",2000,2000,2000],                                          // F-22
+    ["RHS_C130J",1000,0,1000],                                                 // C-130
+    ["RHS_C130J_Cargo",1000,0,1000],                                           // C-130 (Cargo)
+    ["B_UAV_02_dynamicLoadout_F",500,500,500]                                  // UAV
 ];
 
 static_vehicles = [
@@ -340,7 +341,7 @@ blufor_squad_para = [
     --- Elite vehicles ---
     Classnames below have to be unlocked by capturing military bases.
     Which base locks a vehicle is randomized on the first start of the campaign.
-    Current Map: Mehland
+    Current Map: Lythium
 */
 elite_vehicles = [
     "B_W_VTOL_01_armed_F",                                              // AV-44X Blackfish
