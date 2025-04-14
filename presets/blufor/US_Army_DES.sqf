@@ -318,7 +318,7 @@ blufor_squad_aa = [
     "rhsusf_army_ocp_teamleader",
     "rhsusf_army_ocp_aa",
     "rhsusf_army_ocp_aa",
-    "rhsusf_army_ocp_grenadier""
+    "rhsusf_army_ocp_grenadier"
 ];
 
 // CTRG Team
