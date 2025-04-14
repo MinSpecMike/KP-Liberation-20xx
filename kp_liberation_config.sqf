@@ -5,45 +5,17 @@
 
 // Vehicle classnames which also function as ACE medical vehicles.
 KP_liberation_medical_vehicles = [
-    "B_T_Truck_01_medical_F",
-    "B_Truck_01_medical_F",
 
-    // Marine WDL
+    // Base Game
     "B_W_UGV_01_medical_F",
     "B_W_APC_Wheeled_01_medical_F",
     "B_W_Heli_Transport_01_medevac_F",
     "B_Heli_Transport_03_unarmed_F",
     "B_W_Truck_01_medical_F",
+    "B_T_Truck_01_medical_F",
+    "B_Truck_01_medical_F",
 
-    "C_Van_02_medevac_F",
-    "CUP_B_BMP2_AMB_CDF",
-    "CUP_B_BMP2_AMB_CZ_Des",
-    "CUP_B_BMP2_AMB_CZ",
-    "CUP_B_FV432_GB_Ambulance",
-    "CUP_B_HMMWV_Ambulance_ACR",
-    "CUP_B_HMMWV_Ambulance_USA",
-    "CUP_B_HMMWV_Ambulance_USMC",
-    "CUP_B_LR_Ambulance_CZ_D",
-    "CUP_B_LR_Ambulance_CZ_W",
-    "CUP_B_LR_Ambulance_GB_D",
-    "CUP_B_LR_Ambulance_GB_W",
-    "CUP_B_S1203_Ambulance_CDF",
-    "CUP_B_UH1Y_MEV_USMC",
-    "CUP_B_UH60M_Unarmed_FFV_MEV_US",
-    "CUP_O_BMP2_AMB_CHDKZ",
-    "CUP_O_BMP2_AMB_sla",
-    "CUP_O_LR_Ambulance_TKA",
-    "CUP_O_M113_Med_TKA",
-    "gm_gc_airforce_mi2sr",
-    "gm_gc_army_ural375d_medic_win",
-    "gm_gc_army_ural375d_medic",
-    "gm_ge_airforce_do28d2_medevac",
-    "gm_ge_army_u1300l_medic_win_rc",
-    "gm_ge_army_u1300l_medic",
-    "I_E_Truck_02_Medical_F",
-    "I_E_Van_02_medevac_F",
-    "O_T_Truck_03_medical_ghex_F",
-    "O_Truck_03_medical_F",
+    // RHS USAF
     "RHS_UH60M_MEV_d",
     "RHS_UH60M_MEV",
     "RHS_UH60M_MEV2_d",
@@ -54,24 +26,30 @@ KP_liberation_medical_vehicles = [
     "rhsusf_m113d_usarmy_medical",
     "rhsusf_M1230a1_usarmy_d",
     "rhsusf_M1230a1_usarmy_wd",
-    "UK3CB_BAF_LandRover_Amb_FFR_Green_A_MTP",
-    "UK3CB_BAF_LandRover_Amb_FFR_Sand_A_DDPM",
-    "uns_ch47a_medevac",
-    "uns_H13_medevac_CAV",
-    "uns_M577_amb",
-    "uns_uh1D_med"
+    "rhsusf_M1083A1P2_B_M2_D_fmtv_usarmy",
+    "RHS_CH_47F_10",
+
+    // Hatchet H-60
+    "vtx_UH60M_SLICK", 
+    "vtx_MH60M", 
+    "vtx_MH60M_DAP", 
+    "vtx_MH60M_DAP_MLASS", 
+    "vtx_HH60",
+
+    // TF373 MH-47G
+    "TF373_SOAR_MH47G",
+
+    "C_Van_02_medevac_F",
+    "I_E_Truck_02_Medical_F",
+    "I_E_Van_02_medevac_F",
+    "O_T_Truck_03_medical_ghex_F",
+    "O_Truck_03_medical_F"
 ];
 
 // Building classnames which also function as ACE medical facilities.
 KP_liberation_medical_facilities = [
     "Land_Medevac_house_V1_F",
-    "Land_Medevac_HQ_V1_F",
-    "LAND_uns_army_med",
-    "LAND_uns_tent3mash",
-    "uns_mash_main",
-    "uns_mash",
-    "US_Tent_2",
-    "US_Tent_MASH"
+    "Land_Medevac_HQ_V1_F"
 ];
 
 // Classnames of ACE3 crates (which have to be in the unit preset as well).
@@ -79,7 +57,25 @@ KP_liberation_ace_crates = [
     "ACE_Box_82mm_Mo_HE",
     "ACE_Box_82mm_Mo_Illum",
     "ACE_Box_82mm_Mo_Smoke",
-    "ACE_medicalSupplyCrate_advanced"
+    "ACE_medicalSupplyCrate_advanced",
+    "FL_parts_avionics", 
+    "FL_parts_controlsurfaces", 
+    "FL_parts_fueltanklarge", 
+    "FL_parts_fueltanksmall", 
+    "FL_parts_gunfcs", 
+    "FL_parts_enginepistonlarge", 
+    "FL_parts_enginepistonmedium", 
+    "FL_parts_enginepistonsmall", 
+    "FL_parts_rotorassembly", 
+    "FL_parts_SpareParts", 
+    "FL_parts_SparePartsLarge", 
+    "FL_parts_engineturbinelarge", 
+    "FL_parts_engineturbinesmall", 
+    "FL_parts_turretdrive", 
+    "kat_basicSupplyCrate", 
+    "kat_medicalSupplyCrate", 
+    "kat_pharmaMedicalCrate", 
+    "kat_surgerySupplyCrate"
 ];
 
 /* - Custom unit and arsenal preset settings.
@@ -210,17 +206,17 @@ GRLIB_color_friendly = "ColorBLUFOR";                                   // Frien
 GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
-GRLIB_fob_range = 175;                                                  // Build range around the main FOB building.
+GRLIB_fob_range = 250;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 1750;                                             // Altitude in metres for the HALO jump.
-GRLIB_secondary_missions_costs = [15, 10, 8];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
-GRLIB_secondary_objective_impact = 0.75;                                // The percentage impact against enemy combat readiness for a successful FOB hunt.
+GRLIB_secondary_missions_costs = [15, 10, 5];                           // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR].
+GRLIB_secondary_objective_impact = 0.25;                                // The percentage impact against enemy combat readiness for a successful FOB hunt.
 GRLIB_recycling_percentage = 0.65;                                      // Percentage of resources you get back from recycling.
 KP_liberation_production_interval = 30;                                 // Time in minutes until a production process is finished, when resources multiplier is set to 1.
 
 GRLIB_sector_size = 1000;                                               // Range to activate a sector.
-GRLIB_capture_size = 200;                                               // Range to capture a sector.
-GRLIB_defended_buildingpos_part = 0.4;                                  // Multiplier for defenders in buildings.
-GRLIB_battlegroup_size = 6;                                             // Size of enemy battlegroups.
+GRLIB_capture_size = 250;                                               // Range to capture a sector.
+GRLIB_defended_buildingpos_part = 0.5;                                  // Multiplier for defenders in buildings.
+GRLIB_battlegroup_size = 9;                                             // Size of enemy battlegroups.
 GRLIB_vulnerability_timer = 1200;                                       // Time in seconds how long a captured sector is vulnerable to enemy troops.
 GRLIB_radiotower_size = 2500;                                           // Radio Tower scanning range.
 GRLIB_surrender_chance = 80;                                            // Chance that enemy infantry will surrender after heavy losses are encountered.
@@ -234,27 +230,27 @@ GRLIB_battlegroup_cap = 150;                                            // Cap f
 GRLIB_patrol_cap = 150;                                                 // Cap for enemy patrols.
 
 KP_liberation_cr_kill_penalty = 5;                                      // Civil Reputation penalty for killing a civilian.
-KP_liberation_cr_building_penalty = 3;                                  // Civil Reputation penalty for destroying/damaging a building.
-KP_liberation_cr_vehicle_penalty = 2;                                   // Civil Reputation penalty for stealing a civilian vehicle.
-KP_liberation_cr_resistance_penalty = 3;                                // Civil Reputation penalty for killing a friendly resistance soldier.
+KP_liberation_cr_building_penalty = 1;                                  // Civil Reputation penalty for destroying/damaging a building.
+KP_liberation_cr_vehicle_penalty = 1;                                   // Civil Reputation penalty for stealing a civilian vehicle.
+KP_liberation_cr_resistance_penalty = 5;                                // Civil Reputation penalty for killing a friendly resistance soldier.
 KP_liberation_cr_sector_gain = 5;                                       // Civil Reputation gain for liberate a sector.
 KP_liberation_cr_wounded_chance = 35;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
-KP_liberation_cr_wounded_gain = 2;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
+KP_liberation_cr_wounded_gain = 3;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 
 KP_liberation_civinfo_min = 5400;                                       // Civil Informant minimum spawn time. (seconds)
 KP_liberation_civinfo_max = 10800;                                      // Civil Informant maximum spawn time. (seconds)
 KP_liberation_civinfo_chance = 75;                                      // Civil Informant spawn chance. (0-100)
-KP_liberation_civinfo_intel = 5;                                        // Civil Informant intel amount.
+KP_liberation_civinfo_intel = 25;                                       // Civil Informant intel amount.
 KP_liberation_civinfo_duration = 1200;                                  // Civil Informant staytime until despawning. (seconds)
-KP_liberation_civinfo_task_chance = 40;                                 // Chance (0-100) that the delivered informant will spawn a time critical task.
-KP_liberation_civinfo_task_duration = 900;                              // Duration until the task will despawn if no player is near. (seconds)
+KP_liberation_civinfo_task_chance = 50;                                 // Chance (0-100) that the delivered informant will spawn a time critical task.
+KP_liberation_civinfo_task_duration = 1200;                             // Duration until the task will despawn if no player is near. (seconds)
 
 KP_liberation_convoy_ambush_chance = 2;                                 // Chance that a logistic convoy will be ambushed, when civil reputation is low.
 KP_liberation_convoy_ambush_duration = 1200;                            // Duration of the convoy ambush event. (seconds)
 
 KP_liberation_resistance_tier2 = 30;                                    // At which strength (0-100) the guerilla forces will be at tier 2?
-KP_liberation_resistance_tier3 = 70;                                    // At which strength (0-100) the guerilla forces will be at tier 3?
-KP_liberation_resistance_at_chance = 20;                                // Chance that a guerilla unit has a RPG. (tier 2 and 3)
+KP_liberation_resistance_tier3 = 60;                                    // At which strength (0-100) the guerilla forces will be at tier 3?
+KP_liberation_resistance_at_chance = 25;                                // Chance that a guerilla unit has a RPG. (tier 2 and 3)
 KP_liberation_resistance_sector_chance = 35;                            // Chance that a guerilla squad will join an ongoing sector attack.
 KP_liberation_resistance_ambush_chance = 25;                            // Chance that some guerilla units will spawn in blufor sectors for an ambush, if reputation is low.
 
@@ -437,34 +433,6 @@ blacklisted_from_arsenal = [
     "uns_STABO_US_Bag",
     "uns_Tripod_Bag",
     "Uns_US_searchlight_Bag",
-	
-//CDLC Blaclist
-"EF_B_HMG_01_weapon_high_MJTF_de",
-"EF_B_HMG_01_weapon_MJTF_des",
-"EF_B_GMG_01_weapon_MJTF_des",
-"I_CommandoMortar_weapon_RF",
-"O_CommandoMortar_weapon_R",
-"EF_B_CommandoMortar_weapon_MJTF_Wdl",
-"EF_B_CommandoMortar_weapon_MJTF_Des",
-"B_D_CTRG_CommandoMortar_weapon_RF",
-"I_E_CommandoMortar_weapon_RF",
-"B_CommandoMortar_weapon_RF",
-"EF_B_Mortar_01_support_MJTF_des",
-"EF_B_Mortar_01_weapon_MJTF_des",
-"EF_B_HMG_01_support_high_MJTF_de",
-"EF_B_HMG_01_support_MJTF_des",
-"ION_UAV_02_backpack_lxWS",
-"I_UAV_02_backpack_lxWS",
-"O_UAV_02_backpack_lxWS",
-"B_UAV_02_backpack_lxW",
-"ION_UAV_01_backpack_lxWS",
-"EF_B_UAV_01_backpack_coy",
-"B_G_UAV_02_IED_backpack_lxWS",
-"B_Tura_UAV_02_IED_backpack_lxWS",
-"CIV_UAV_01_backpack_lxWS"
-
-
-
 ];
 
 // Items which should be added as allowed Items, when they get blacklisted, even if they are not in the blacklisted_from_arsenal array
@@ -580,137 +548,24 @@ KP_liberation_allowed_items_extension = [
 /* - Configuration settings for crates transported by vehicles.
 Format = ["classname", distance behind vehicle to unload crate, attachTo positions for each box],    */
 KPLIB_transportConfigs = [
-    ["B_Heli_Transport_03_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
-    ["B_Heli_Transport_03_unarmed_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
 
-    // Marine WDL
+    // Base Game
     ["B_W_Truck_01_cargo_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
     ["B_W_Truck_01_covered_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
     ["B_W_Truck_01_flatbed_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
     ["B_W_Truck_01_transport_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
     ["B_W_Heli_Transport_03_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
     ["B_W_Heli_Transport_03_unarmed_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
+    ["B_Heli_Transport_03_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
+    ["B_Heli_Transport_03_unarmed_F", -8, [0,2.2,-1], [0,0.5,-1], [0,-1.2,-1]],
 
-    // Russia WDL
+    // E22 Russia WDL
     ["E22_O_RAF_Truck_03_transport_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
     ["E22_O_RAF_Truck_03_covered_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
     ["E22_O_RAF_Truck_02_transport_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
     ["E22_O_RAF_Truck_02_covered_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
 
-    ["B_T_Truck_01_cargo_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
-    ["B_T_Truck_01_covered_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
-    ["B_T_Truck_01_flatbed_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
-    ["B_T_Truck_01_transport_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
-    ["B_T_VTOL_01_infantry_F", -7.5,[0,4.7,-4.88],[0,3,-4.88],[0,1.3,-4.88],[0,-0.4,-4.88],[0,-2.1,-4.88]],
-    ["B_T_VTOL_01_vehicle_F", -7.5,[0,4.7,-4.88],[0,3,-4.88],[0,1.3,-4.88],[0,-0.4,-4.88],[0,-2.1,-4.88]],
-    ["B_Truck_01_cargo_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
-    ["B_Truck_01_covered_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
-    ["B_Truck_01_flatbed_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
-    ["B_Truck_01_transport_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
-    ["BW_AW101_Trans_Heer_F", -6.5, [0,4.2,-1.45], [0,2.5,-1.45], [0,0.8,-1.45], [0,-0.9,-1.45]],
-    ["BW_LKW7T_Trans_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
-    ["C_IDAP_Van_02_transport_F", -5, [0,-1.75,0]],
-    ["C_IDAP_Van_02_vehicle_F", -5, [0,0.5,0], [0,-1.75,0]],
-    ["C_Offroad_01_F", -6.5, [0,-1.7,0.4]],
-    ["C_Truck_02_covered_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
-    ["C_Truck_02_transport_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
-    ["C_Van_01_transport_F", -6.5, [0,-1.1,0.25], [0,-2.6,0.25]],
-    ["C_Van_02_service_F", -5, [0,0.5,0], [0,-1.75,0]],
-    ["C_Van_02_transport_F", -5, [0,-1.75,0]],
-    ["C_Van_02_vehicle_F", -5, [0,0.5,0], [0,-1.75,0]],
-    ["CUP_B_C130J_Cargo_USMC",-10,[0,0.6,-3.76],[0,-0.9,-3.76],[0,-2.5,-3.76],[0,-4.2,-3.76],[0,2.2,-3.76],[0,3.8,-3.76],[0,5.5,-3.76]],
-    ["CUP_B_CH47F_GB", -8, [0,-3.535,-1.9], [0,-1.819,-1.9], [0,0.98,-1.9], [0,3.037,-1.9]],
-    ["CUP_B_CH47F_USA", -8, [0,-3.535,-1.9], [0,-1.819,-1.9], [0,0.98,-1.9], [0,3.037,-1.9]],
-    ["CUP_B_CH53E_USMC", -8, [0,7.566,-3], [0,5.749,-3], [0,3.847,-3], [0,2,-3], [0,0.338,-3]],
-    ["CUP_B_Kamaz_CDF", -6.5, [0,-0.4,0], [0,-2.6,0]],
-    ["CUP_B_Kamaz_Open_CDF", -6.5, [0.12,0.4,0], [0.12,-1.8,0]],
-    ["CUP_B_Mi17_CDF", -6.5, [0,2.7,-1.5], [00,0.6,-1.5]],
-    ["CUP_B_Mi171Sh_ACR", -6.5, [0,2.7,-1.5], [00,0.6,-1.5]],
-    ["CUP_B_Mi171Sh_Unarmed_ACR", -6.5, [0,2.7,-1.5], [00,0.6,-1.5]],
-    ["CUP_B_MI6A_CDF", -8, [0,6,-0.6], [0,4.3,-0.6], [0,2.5,-0.6], [0,0.5,-0.6], [0,-1.2,-0.6], [0,-3.1,-0.6]],
-    ["CUP_B_MTVR_USA", -6.5, [-0.009,-0.647,0.112], [-0.054,-2.535,0.112]],
-    ["CUP_B_MTVR_USMC", -6.5, [-0.009,-0.647,0.112], [-0.054,-2.535,0.112]],
-    ["CUP_B_MV22_USMC_RAMPGUN", -8, [0,3.3,-1.6], [0,1,-1.6], [0,-1.3,-1.6]],
-    ["CUP_B_MV22_USMC", -8, [0,3.3,-1.6], [0,1,-1.6], [0,-1.3,-1.6]],
-    ["CUP_B_MV22_VIV_USMC", -8, [0,3.3,-1.6], [0,1,-1.6], [0,-1.3,-1.6]],
-    ["CUP_B_T810_Armed_CZ_DES", -6.5, [0,0,-0.5], [0,-2,-0.5]],
-    ["CUP_B_T810_Armed_CZ_WDL", -6.5, [0,0,-0.5], [0,-2,-0.5]],
-    ["CUP_B_T810_Unarmed_CZ_DES", -6.5, [0,0,0.2], [0,-2,0.2]],
-    ["CUP_B_T810_Unarmed_CZ_WDL", -6.5, [0,0,0.2], [0,-2,0.2]],
-    ["CUP_B_Ural_CDF", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_B_Ural_Open_CDF", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_B_Wolfhound_GMG_GB_D", -6.5, [0,-3.5,2.3]],
-    ["CUP_B_Wolfhound_GMG_GB_W", -6.5, [0,-3.5,2.3]],
-    ["CUP_B_Wolfhound_HMG_GB_D", -6.5, [0,-3.5,2.3]],
-    ["CUP_B_Wolfhound_HMG_GB_W", -6.5, [0,-3.5,2.3]],
-    ["CUP_B_Wolfhound_LMG_GB_D", -6.5, [0,-3.5,2.3]],
-    ["CUP_B_Wolfhound_LMG_GB_W", -6.5, [0,-3.5,2.3]],
-    ["CUP_C_Ural_Civ_01", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_C_Ural_Civ_03", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_C_Ural_Open_Civ_03", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_O_Kamaz_Open_RU", -6.5, [0.12,0.4,0], [0.12,-1.8,0]],
-    ["CUP_O_Kamaz_RU", -6.5, [0,-0.4,0], [0,-2.6,0]],
-    ["CUP_O_Ural_CHDKZ", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_O_Ural_Open_CHDKZ", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_O_Ural_Open_SLA", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_O_Ural_Open_TKA", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_O_Ural_SLA", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_O_Ural_TKA", -6.5, [0,-0.5,0], [0,-2.5,0]],
-    ["CUP_O_Mi8_SLA_1", -6.5, [0,2.7,-1.5], [00,0.6,-1.5]],
-    ["CUP_O_MI6A_CHDKZ", -8, [0,6,-0.6], [0,4.3,-0.6], [0,2.5,-0.6], [0,0.5,-0.6], [0,-1.2,-0.6], [0,-3.1,-0.6]],
-    ["CUP_O_MI6A_TKA", -8, [0,6,-0.6], [0,4.3,-0.6], [0,2.5,-0.6], [0,0.5,-0.6], [0,-1.2,-0.6], [0,-3.1,-0.6]],
-    ["CUP_O_C130J_Cargo_TKA",-10,[0,0.6,-3.76],[0,-0.9,-3.76],[0,-2.5,-3.76],[0,-4.2,-3.76],[0,2.2,-3.76],[0,3.8,-3.76],[0,5.5,-3.76]],
-    ["gm_gc_army_ural4320_cargo_win", -5, [0.0722656,-0.539063,-0.1], [0.076416,-1.76904,-0.1], [0.0773926,-2.85742,-0.1]],
-    ["gm_gc_army_ural4320_cargo", -5, [0.0722656,-0.539063,-0.1], [0.076416,-1.76904,-0.1], [0.0773926,-2.85742,-0.1]],
-    ["gm_gc_bgs_ural4320_cargo", -5, [-0.0373535,-0.535156,-0.1], [-0.0344238,-1.76611,-0.1], [-0.0334473,-2.85547,-0.1]],
-    ["gm_ge_army_kat1_451_container_win", -5, [-0.0280762,0.222656,-0.2], [-0.0202637,-1.31152,-0.2],[-0.0222168,-2.79834,-0.2]],
-    ["gm_ge_army_kat1_451_container", -5, [-0.0280762,0.222656,-0.2], [-0.0202637,-1.31152,-0.2], [-0.0222168,-2.79834,-0.2]],
-    ["gm_ge_army_kat1_454_cargo_win",-6.5, [-0.0217285,1.32764,0.35], [-0.00170898,-0.337891,0.35], [-0.0441895,-1.90332,0.35], [-0.0615234,-3.59033,0.35]],
-    ["gm_ge_army_kat1_454_cargo",-6.5, [-0.0217285,1.32764,0.35], [-0.00170898,-0.337891,0.35], [-0.0441895,-1.90332,0.35], [-0.0615234,-3.59033,0.35]],
-    ["gm_ge_army_u1300l_container_win", -5, [-0.0495605,-0.609863,-0.6], [0.147461,-2.06787,-0.6]],
-    ["gm_ge_army_u1300l_container", -5, [-0.0495605,-0.609863,-0.6], [0.147461,-2.06787,-0.6]],
-    ["greuh_eh101_gr", -6.5, [0,4.2,-1.45], [0,2.5,-1.45], [0,0.8,-1.45], [0,-0.9,-1.45]],
-    ["I_C_Van_01_transport_F", -6.5, [0,-1.1,0.25], [0,-2.6,0.25]],
-    ["I_C_Van_02_transport_F", -5, [0,-1.75,0]],
-    ["I_C_Van_02_vehicle_F", -5, [0,0.5,0], [0,-1.75,0]],
-    ["I_E_Truck_02_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
-    ["I_E_Truck_02_transport_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
-    ["I_E_Van_02_transport_F", -5, [0,-1.75,0]],
-    ["I_E_Van_02_transport_MP_F", -5, [0,-1.75,0]],
-    ["I_E_Van_02_vehicle_F", -5, [0,0.5,0], [0,-1.75,0]],
-    ["I_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
-    ["I_G_Van_01_transport_F", -6.5, [0,-1.1,0.25], [0,-2.6,0.25]],
-    ["I_G_Van_02_transport_F", -5, [0,-1.75,0]],
-    ["I_G_Van_02_vehicle_F", -5, [0,0.5,0], [0,-1.75,0]],
-    ["I_Heli_Transport_02_F", -6.5, [0,4.2,-1.45], [0,2.5,-1.45], [0,0.8,-1.45], [0,-0.9,-1.45]],
-    ["LOP_ISTS_OPF_Truck", -6.5, [0,-1.1,0.25], [0,-2.6,0.25]],
-    ["LOP_SLA_Ural_open", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["LOP_TAK_Civ_Ural_open", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["LOP_TAK_Civ_Ural", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["LOP_TKA_Ural_open", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["LOP_TKA_Ural", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["O_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
-    ["O_G_Van_01_transport_F", -6.5, [0,-1.1,0.25], [0,-2.6,0.25]],
-    ["O_T_Truck_03_covered_ghex_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
-    ["O_T_Truck_03_transport_ghex_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
-    ["O_Truck_03_covered_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
-    ["O_Truck_03_transport_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
-    ["RHS_C130J", -9.5, [-0.8,8.0,-4.0], [0.8,8.0,-4.0], [-0.8,8.0,-2.8], [0.8,8.0,-2.8], [-0.8,6.5,-4.0], [0.8,6.5,-4.0], [-0.8,6.5,-2.8], [0.8,6.5,-2.8], [-0.8,5.0,-4.0], [0.8,5.0,-4.0], [-0.8,5.0,-2.8], [0.8,5.0,-2.8], [-0.8,3.5,-4.0], [0.8,3.5,-4.0], [-0.8,3.5,-2.8], [0.8,3.5,-2.8], [-0.8,2.0,-4.0], [0.8,2.0,-4.0], [-0.8,2.0,-2.8], [0.8,2.0,-2.8], [-0.8,0.5,-4.0], [0.8,0.5,-4.0], [-0.8,0.5,-2.8], [0.8,0.5,-2.8]],
-    ["RHS_CH_47F_10", -8, [0,2.2,-1.7], [0,0.5,-1.7], [0,-1.2,-1.7]],
-    ["RHS_CH_47F_light", -8, [0,2.2,-1.7], [0,0.5,-1.7], [0,-1.2,-1.7]],
-    ["RHS_CH_47F", -8, [0,2.2,-1.7], [0,0.5,-1.7], [0,-1.2,-1.7]],
-    ["rhs_kamaz5350_flatbed_cover_vdv", -4.5, [0,0.67,-0.4], [0,-0.88,-0.4], [0,-2.43,-0.4]],
-    ["rhs_kamaz5350_flatbed_vdv", -4.5, [0,0.67,-0.4], [0,-0.88,-0.4], [0,-2.43,-0.4]],
-    ["rhs_kamaz5350_open_vdv", -4.5, [0,0.67,-0.4], [0,-0.88,-0.4], [0,-2.43,-0.4]],
-    ["rhs_kamaz5350_vdv", -4.5, [0,0.67,-0.4], [0,-0.88,-0.4], [0,-2.43,-0.4]],
-    ["RHS_Ural_Civ_03", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["RHS_Ural_MSV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["RHS_Ural_Open_Civ_03", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["RHS_Ural_Open_Flat_MSV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["RHS_Ural_Open_Flat_VDV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["RHS_Ural_Open_MSV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["RHS_Ural_Open_VDV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
-    ["RHS_Ural_VDV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
+    // RHS USAF
     ["rhsusf_CH53E_USMC_D", -11.0, [0,7,-3.2], [0,7,-2.0], [0,5.5,-3.2], [0,5.5,-2.0], [0,4,-3.2], [0,4,-2.0], [0,2.5,-3.2], [0,2.5,-2.0], [0,1.0,-3.2], [0,1.0,-2.0], [0,-0.5,-3.2], [0,-0.5,-2.0]],
     ["rhsusf_CH53E_USMC", -11.0, [0,7,-3.2], [0,7,-2.0], [0,5.5,-3.2], [0,5.5,-2.0], [0,4,-3.2], [0,4,-2.0], [0,2.5,-3.2], [0,2.5,-2.0], [0,1.0,-3.2], [0,1.0,-2.0], [0,-0.5,-3.2], [0,-0.5,-2.0]],
     ["rhsusf_M1078A1P2_B_D_flatbed_fmtv_usarmy", -5.0, [0,-0.2,0.45], [0,-1.9,0.45]],
@@ -746,60 +601,79 @@ KPLIB_transportConfigs = [
     ["rhsusf_M1239_socom_d", -5, [-0.125,-1.73,-0.66], [0,-3.28,-0.66]],
     ["rhsusf_M1239_M2_socom_d", -5, [-0.125,-1.73,-0.66], [0,-3.28,-0.66]],
     ["rhsusf_M1239_MK19_socom_d", -5, [-0.125,-1.73,-0.66], [0,-3.28,-0.66]],
-    ["sfp_tgb30", -5, [0.2,-0.1,2], [0.2,-2.1,2]],
-    ["sfp_tgb40", -5, [0.1,-0.7,2], [0.1,-2.7,2]],
-    ["UK3CB_BAF_Merlin_HC3_18_DPMT", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
-    ["UK3CB_BAF_Merlin_HC3_32_MTP", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
-    ["UK3CB_BAF_Merlin_HC3_CSAR_MTP", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
-    ["UK3CB_BAF_Merlin_HC4_18_Arctic", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
-    ["UK3CB_BAF_Merlin_HC4_18_GPMG_Arctic", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
-    ["UK3CB_BAF_Merlin_HC4_32_Arctic", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
-    ["UK3CB_BAF_Merlin_HC4_CSAR_Arctic", -7.5, [0.25,3.7,-1.5], [0.25,1.6,-1.5], [0.25,-0.4,-1.5]],
-    ["USAF_C17",-10,[-1.2,14.4,-0.43],[-1.2,12.8,-0.43],[-1.2,11.1,-0.43],[-1.2,9.5,-0.43],[-1.2,7.9,-0.43],[-1.2,6.3,-0.43],[-1.2,4.6,-0.43],[-1.2,3,-0.43],[-1.2,1.4,-0.43],[-1.2,-0.1,-0.43],[-1.2,-1.8,-0.43],[1.2,14.4,-0.43],[1.2,12.8,-0.43],[1.2,11.2,-0.43],[1.2,9.6,-0.43],[1.2,7.9,-0.43],[1.2,6.3,-0.43],[1.2,4.7,-0.43],[1.2,3.1,-0.43],[1.2,1.5,-0.43],[1.2,0,-0.43],[1.2,-1.7,-0.43],[-1.2,14.5,1.22],[-1.2,12.8,1.22],[-1.2,11.2,1.2],[-1.2,9.5,1.22],[-1.2,7.9,1.22],[-1.2,6.3,1.22],[-1.2,4.7,1.22],[-1.2,3,1.22],[-1.2,1.4,1.22],[-1.2,-0.1,1.22],[-1.2,-1.7,1.22],[1.2,14.5,1.22],[1.2,12.8,1.22],[1.2,11.2,1.22],[1.2,9.6,1.22],[1.2,8,1.22],[1.2,6.3,1.22],[1.2,4.7,1.22],[1.2,3.1,1.22],[1.2,1.5,1.22],[1.2,0,1.22],[1.2,-1.6,1.22]],
-    ["USAF_C130J",-10,[0,3.6,2.08],[0,2,2.08],[0,0.3,2.08],[0,-1.3,2.08]],
-    ["USAF_C130J_Cargo",-10,[0,3.6,2.08],[0,2,2.08],[0,0.3,2.08],[0,-1.3,2.08],[0,5.3,2.08],[0,7,2.08]],
-    ["uns_M35A2_Open", -5, [0,-0.6,0.1], [0,-2.3,0.1]],
-    ["uns_M35A2", -5, [0,-0.6,0.1], [0,-2.3,0.1]],
-    ["uns_m37b1", -5, [0,-1.8,0.15]],
-    ["uns_nvatruck_mg", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
-    ["uns_nvatruck_open", -5, [0,-1.05,0.8], [0,-2.75,0.8]],
-    ["uns_nvatruck", -5, [0,-1.05,0.8], [0,-2.75,0.8]]
+    ["RHS_C130J", -9.5, [-0.8,8.0,-4.0], [0.8,8.0,-4.0], [-0.8,8.0,-2.8], [0.8,8.0,-2.8], [-0.8,6.5,-4.0], [0.8,6.5,-4.0], [-0.8,6.5,-2.8], [0.8,6.5,-2.8], [-0.8,5.0,-4.0], [0.8,5.0,-4.0], [-0.8,5.0,-2.8], [0.8,5.0,-2.8], [-0.8,3.5,-4.0], [0.8,3.5,-4.0], [-0.8,3.5,-2.8], [0.8,3.5,-2.8], [-0.8,2.0,-4.0], [0.8,2.0,-4.0], [-0.8,2.0,-2.8], [0.8,2.0,-2.8], [-0.8,0.5,-4.0], [0.8,0.5,-4.0], [-0.8,0.5,-2.8], [0.8,0.5,-2.8]],
+    ["RHS_C130J_Cargo", -9.5, [-0.8,8.0,-4.0], [0.8,8.0,-4.0], [-0.8,8.0,-2.8], [0.8,8.0,-2.8], [-0.8,6.5,-4.0], [0.8,6.5,-4.0], [-0.8,6.5,-2.8], [0.8,6.5,-2.8], [-0.8,5.0,-4.0], [0.8,5.0,-4.0], [-0.8,5.0,-2.8], [0.8,5.0,-2.8], [-0.8,3.5,-4.0], [0.8,3.5,-4.0], [-0.8,3.5,-2.8], [0.8,3.5,-2.8], [-0.8,2.0,-4.0], [0.8,2.0,-4.0], [-0.8,2.0,-2.8], [0.8,2.0,-2.8], [-0.8,0.5,-4.0], [0.8,0.5,-4.0], [-0.8,0.5,-2.8], [0.8,0.5,-2.8]],
+    ["RHS_CH_47F_10", -8, [0,2.2,-1.7], [0,0.5,-1.7], [0,-1.2,-1.7]],
+    ["RHS_CH_47F_light", -8, [0,2.2,-1.7], [0,0.5,-1.7], [0,-1.2,-1.7]],
+    ["RHS_CH_47F", -8, [0,2.2,-1.7], [0,0.5,-1.7], [0,-1.2,-1.7]],
+    ["RHS_CH_47F_10_cargo", -8, [0,2.2,-1.7], [0,0.5,-1.7], [0,-1.2,-1.7]],
+
+    // TF373 MH-47G
+    ["TF373_SOAR_MH47G", -8, [0,2.2,-1.7], [0,0.5,-1.7], [0,-1.2,-1.7]],
+
+    ["B_T_Truck_01_cargo_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_T_Truck_01_covered_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_T_Truck_01_flatbed_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_T_Truck_01_transport_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_T_VTOL_01_infantry_F", -7.5,[0,4.7,-4.88],[0,3,-4.88],[0,1.3,-4.88],[0,-0.4,-4.88],[0,-2.1,-4.88]],
+    ["B_T_VTOL_01_vehicle_F", -7.5,[0,4.7,-4.88],[0,3,-4.88],[0,1.3,-4.88],[0,-0.4,-4.88],[0,-2.1,-4.88]],
+    ["B_Truck_01_cargo_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_Truck_01_covered_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_Truck_01_flatbed_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["B_Truck_01_transport_F", -6.5, [0,-0.4,0.4], [0,-2.1,0.4], [0,-3.8,0.4]],
+    ["C_IDAP_Van_02_transport_F", -5, [0,-1.75,0]],
+    ["C_IDAP_Van_02_vehicle_F", -5, [0,0.5,0], [0,-1.75,0]],
+    ["C_Offroad_01_F", -6.5, [0,-1.7,0.4]],
+    ["C_Truck_02_covered_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
+    ["C_Truck_02_transport_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
+    ["C_Van_01_transport_F", -6.5, [0,-1.1,0.25], [0,-2.6,0.25]],
+    ["C_Van_02_service_F", -5, [0,0.5,0], [0,-1.75,0]],
+    ["C_Van_02_transport_F", -5, [0,-1.75,0]],
+    ["C_Van_02_vehicle_F", -5, [0,0.5,0], [0,-1.75,0]],
+    ["I_C_Van_01_transport_F", -6.5, [0,-1.1,0.25], [0,-2.6,0.25]],
+    ["I_C_Van_02_transport_F", -5, [0,-1.75,0]],
+    ["I_C_Van_02_vehicle_F", -5, [0,0.5,0], [0,-1.75,0]],
+    ["I_E_Truck_02_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
+    ["I_E_Truck_02_transport_F", -6.5, [0,0.3,0.05], [0,-1.3,0.05], [0,-2.9,0.05]],
+    ["I_E_Van_02_transport_F", -5, [0,-1.75,0]],
+    ["I_E_Van_02_transport_MP_F", -5, [0,-1.75,0]],
+    ["I_E_Van_02_vehicle_F", -5, [0,0.5,0], [0,-1.75,0]],
+    ["I_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
+    ["I_G_Van_01_transport_F", -6.5, [0,-1.1,0.25], [0,-2.6,0.25]],
+    ["I_G_Van_02_transport_F", -5, [0,-1.75,0]],
+    ["I_G_Van_02_vehicle_F", -5, [0,0.5,0], [0,-1.75,0]],
+    ["I_Heli_Transport_02_F", -6.5, [0,4.2,-1.45], [0,2.5,-1.45], [0,0.8,-1.45], [0,-0.9,-1.45]],
+    ["O_G_Offroad_01_F", -6.5, [0,-1.7,0.4]],
+    ["O_G_Van_01_transport_F", -6.5, [0,-1.1,0.25], [0,-2.6,0.25]],
+    ["O_T_Truck_03_covered_ghex_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
+    ["O_T_Truck_03_transport_ghex_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
+    ["O_Truck_03_covered_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
+    ["O_Truck_03_transport_F", -6.5, [0,-0.8,0.4], [0,-2.4,0.4], [0,-4.0,0.4]],
+    ["rhs_kamaz5350_flatbed_cover_vdv", -4.5, [0,0.67,-0.4], [0,-0.88,-0.4], [0,-2.43,-0.4]],
+    ["rhs_kamaz5350_flatbed_vdv", -4.5, [0,0.67,-0.4], [0,-0.88,-0.4], [0,-2.43,-0.4]],
+    ["rhs_kamaz5350_open_vdv", -4.5, [0,0.67,-0.4], [0,-0.88,-0.4], [0,-2.43,-0.4]],
+    ["rhs_kamaz5350_vdv", -4.5, [0,0.67,-0.4], [0,-0.88,-0.4], [0,-2.43,-0.4]],
+    ["RHS_Ural_Civ_03", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
+    ["RHS_Ural_MSV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
+    ["RHS_Ural_Open_Civ_03", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
+    ["RHS_Ural_Open_Flat_MSV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
+    ["RHS_Ural_Open_Flat_VDV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
+    ["RHS_Ural_Open_MSV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
+    ["RHS_Ural_Open_VDV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]],
+    ["RHS_Ural_VDV_01", -6.5, [0,-0.2,0.55], [0,-1.4,0.55], [0,-2.55,0.55]]
+    
 ];
 
 /* Various other settings.
 Everything the AI troups should be able to resupply from. */
 KPLIB_aiResupplySources = [
-    "B_Slingload_01_Ammo_F",
 
-    // Marine WDL
+    // Base Game
     "B_W_APC_Tracked_01_CRV_F",
     "B_W_Truck_01_ammo_F",
+    "B_Slingload_01_Ammo_F",
 
-    "B_APC_Tracked_01_CRV_F",
-    "B_T_APC_Tracked_01_CRV_F",
-    "B_T_Truck_01_ammo_F",
-    "B_Truck_01_ammo_F",
-    "BW_LKW15T_Ammo_F",
-    "CUP_B_Kamaz_Reammo_CDF",
-    "CUP_B_MTVR_Ammo_USA",
-    "CUP_B_MTVR_Ammo_USMC",
-    "CUP_B_T810_Reammo_CZ_DES",
-    "CUP_B_T810_Reammo_CZ_WDL",
-    "CUP_O_Kamaz_Reammo_RU",
-    "CUP_O_Ural_Reammo_CHDKZ",
-    "CUP_O_Ural_Reammo_SLA",
-    "CUP_O_Ural_Reammo_TKA",
-    "CUP_O_V3S_Rearm_TKA",
-    "gm_gc_army_ural4320_reammo_win",
-    "gm_gc_army_ural4320_reammo",
-    "gm_ge_army_kat1_451_reammo_win",
-    "gm_ge_army_kat1_451_reammo",
-    "I_E_Truck_02_Ammo_F",
-    "Land_Pod_Heli_Transport_04_ammo_F",
-    "O_Heli_Transport_04_ammo_F",
-    "O_T_Truck_03_ammo_ghex_F",
-    "O_Truck_03_ammo_F",
-    "rhs_gaz66_ammo_msv",
+    // RHS USAF
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
     "rhsusf_M1239_MK19_Deploy_socom_d",
     "rhsusf_M1239_M2_Deploy_socom_d",
@@ -809,44 +683,28 @@ KPLIB_aiResupplySources = [
     "rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
     "rhsusf_M977A4_AMMO_usarmy_d",
     "rhsusf_M977A4_AMMO_usarmy_wd",
-    "sfp_tgb40_ammo",
-    "uns_M113_ENG",
-    "uns_M35A2_ammo",
-    "uns_motorpool1_repair"
+
+    "B_APC_Tracked_01_CRV_F",
+    "B_T_APC_Tracked_01_CRV_F",
+    "B_T_Truck_01_ammo_F",
+    "B_Truck_01_ammo_F",
+    "I_E_Truck_02_Ammo_F",
+    "Land_Pod_Heli_Transport_04_ammo_F",
+    "O_Heli_Transport_04_ammo_F",
+    "O_T_Truck_03_ammo_ghex_F",
+    "O_Truck_03_ammo_F",
+    "rhs_gaz66_ammo_msv"
 ];
 
 // Everything that can resupply other vehicles.
 vehicle_repair_sources = [
-    "B_Slingload_01_Repair_F",
 
-    // Marine WDL
+    // Base Game
     "B_W_APC_Tracked_01_CRV_F",
     "B_W_Truck_01_Repair_F",
+    "B_Slingload_01_Repair_F",
 
-    "B_APC_Tracked_01_CRV_F",
-    "B_T_APC_Tracked_01_CRV_F",
-    "B_T_Truck_01_Repair_F",
-    "B_Truck_01_Repair_F",
-    "BW_LKW15T_Repair_F",
-    "C_Offroad_01_repair_F",
-    "CUP_B_Kamaz_Repair_CDF",
-    "CUP_B_MTVR_Repair_USA",
-    "CUP_B_MTVR_Repair_USMC",
-    "CUP_B_T810_Repair_CZ_DES",
-    "CUP_B_T810_Repair_CZ_WDL",
-    "CUP_O_V3S_Repair_TKA",
-    "CUP_O_Ural_Repair_SLA",
-    "CUP_O_Ural_Repair_CHDKZ",
-    "gm_gc_army_ural4320_repair_win",
-    "gm_gc_army_ural4320_repair",
-    "gm_ge_army_u1300l_repair_win",
-    "gm_ge_army_u1300l_repair",
-    "I_E_Truck_02_Box_F",
-    "Land_Pod_Heli_Transport_04_repair_F",
-    "O_Heli_Transport_04_repair_F",
-    "O_T_Truck_03_repair_ghex_F",
-    "O_Truck_03_repair_F",
-    "RHS_Ural_Repair_VDV_01",
+    // RHS USAF
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
     "rhsusf_M1239_MK19_Deploy_socom_d",
     "rhsusf_M1239_M2_Deploy_socom_d",
@@ -856,45 +714,28 @@ vehicle_repair_sources = [
     "rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",
     "rhsusf_M977A4_REPAIR_usarmy_d",
     "rhsusf_M977A4_REPAIR_usarmy_wd",
-    "sfp_tgb30_repair",
-    "UNS_Hanger_repair",
-    "uns_M113_ENG",
-    "uns_M35A2_repair",
-    "uns_motorpool1_repair"
-];
-
-vehicle_rearm_sources = [
-    "B_Slingload_01_Ammo_F",
-
-    // Marine WDL
-    "B_W_APC_Tracked_01_CRV_F",
-    "B_W_Truck_01_ammo_F",
 
     "B_APC_Tracked_01_CRV_F",
     "B_T_APC_Tracked_01_CRV_F",
-    "B_T_Truck_01_ammo_F",
-    "B_Truck_01_ammo_F",
-    "BW_LKW15T_Ammo_F",
-    "CUP_B_Kamaz_Reammo_CDF",
-    "CUP_B_MTVR_Ammo_USA",
-    "CUP_B_MTVR_Ammo_USMC",
-    "CUP_B_T810_Reammo_CZ_DES",
-    "CUP_B_T810_Reammo_CZ_WDL",
-    "CUP_O_Kamaz_Reammo_RU",
-    "CUP_O_Ural_Reammo_CHDKZ",
-    "CUP_O_Ural_Reammo_SLA",
-    "CUP_O_Ural_Reammo_TKA",
-    "CUP_O_V3S_Rearm_TKA",
-    "gm_gc_army_ural4320_reammo_win",
-    "gm_gc_army_ural4320_reammo",
-    "gm_ge_army_kat1_451_reammo_win",
-    "gm_ge_army_kat1_451_reammo",
-    "I_E_Truck_02_Ammo_F",
-    "Land_Pod_Heli_Transport_04_ammo_F",
-    "O_Heli_Transport_04_ammo_F",
-    "O_T_Truck_03_ammo_ghex_F",
-    "O_Truck_03_ammo_F",
-    "rhs_gaz66_ammo_msv",
+    "B_T_Truck_01_Repair_F",
+    "B_Truck_01_Repair_F",
+    "C_Offroad_01_repair_F",
+    "I_E_Truck_02_Box_F",
+    "Land_Pod_Heli_Transport_04_repair_F",
+    "O_Heli_Transport_04_repair_F",
+    "O_T_Truck_03_repair_ghex_F",
+    "O_Truck_03_repair_F",
+    "RHS_Ural_Repair_VDV_01"
+];
+
+vehicle_rearm_sources = [
+
+    // Base Game
+    "B_W_APC_Tracked_01_CRV_F",
+    "B_W_Truck_01_ammo_F",
+    "B_Slingload_01_Ammo_F",
+
+    // RHS USAF
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
     "rhsusf_M1239_MK19_Deploy_socom_d",
     "rhsusf_M1239_M2_Deploy_socom_d",
@@ -904,45 +745,31 @@ vehicle_rearm_sources = [
     "rhsusf_M977A4_AMMO_BKIT_usarmy_wd",
     "rhsusf_M977A4_AMMO_usarmy_d",
     "rhsusf_M977A4_AMMO_usarmy_wd",
-    "sfp_tgb40_ammo",
-    "uns_M113_ENG",
-    "uns_M35A2_ammo"
+
+    // FIREWILL
+    "FIR_Baseplate",
+
+    "B_APC_Tracked_01_CRV_F",
+    "B_T_APC_Tracked_01_CRV_F",
+    "B_T_Truck_01_ammo_F",
+    "B_Truck_01_ammo_F",
+    "I_E_Truck_02_Ammo_F",
+    "Land_Pod_Heli_Transport_04_ammo_F",
+    "O_Heli_Transport_04_ammo_F",
+    "O_T_Truck_03_ammo_ghex_F",
+    "O_Truck_03_ammo_F",
+    "rhs_gaz66_ammo_msv"
 ];
 
 vehicle_refuel_sources = [
-    "B_Slingload_01_Fuel_F",
-
-    // Marine WDL
+    
+    // Base Game
     "B_W_APC_Tracked_01_CRV_F",
     "B_W_Truck_01_fuel_F",
-    
-    "B_APC_Tracked_01_CRV_F",
-    "B_T_APC_Tracked_01_CRV_F",
-    "B_T_Truck_01_fuel_F",
-    "B_Truck_01_fuel_F",
-    "BW_LKW15T_Fuel_F",
-    "C_Truck_02_fuel_F",
-    "C_Van_01_fuel_F",
-    "CUP_B_Kamaz_Refuel_CDF",
-    "CUP_B_MTVR_Refuel_USA",
-    "CUP_B_MTVR_Refuel_USMC",
-    "CUP_B_T810_Refuel_CZ_DES",
-    "CUP_B_T810_Refuel_CZ_WDL",
-    "CUP_O_Kamaz_Refuel_RU",
-    "CUP_O_Ural_Refuel_CHDKZ",
-    "CUP_O_Ural_Refuel_SLA",
-    "CUP_O_Ural_Refuel_TKA",
-    "CUP_O_V3S_Refuel_TKA",
-    "gm_gc_army_ural375d_refuel_win",
-    "gm_gc_army_ural375d_refuel",
-    "gm_ge_army_kat1_451_refuel_win",
-    "gm_ge_army_kat1_451_refuel",
-    "I_E_Truck_02_fuel_F",
-    "Land_Pod_Heli_Transport_04_fuel_F",
-    "O_Heli_Transport_04_fuel_F",
-    "O_T_Truck_03_fuel_ghex_F",
-    "O_Truck_03_fuel_F",
-    "RHS_Ural_Fuel_VDV_01",
+    "B_Slingload_01_Fuel_F",
+    "StorageBladder_01_fuel_sand_F",
+
+    // RHS USAF
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
     "rhsusf_M1239_MK19_Deploy_socom_d",
     "rhsusf_M1239_M2_Deploy_socom_d",
@@ -950,16 +777,25 @@ vehicle_refuel_sources = [
     "rhsusf_M978A4_BKIT_usarmy_wd",
     "rhsusf_M978A4_usarmy_d",
     "rhsusf_M978A4_usarmy_wd",
-    "sfp_tgb40_fuel",
-    "uns_M113_ENG",
-    "uns_M35A2_fuel",
-    "uns_M35A2_fueltanker"
+
+    "B_APC_Tracked_01_CRV_F",
+    "B_T_APC_Tracked_01_CRV_F",
+    "B_T_Truck_01_fuel_F",
+    "B_Truck_01_fuel_F",
+    "C_Truck_02_fuel_F",
+    "C_Van_01_fuel_F",
+    "I_E_Truck_02_fuel_F",
+    "Land_Pod_Heli_Transport_04_fuel_F",
+    "O_Heli_Transport_04_fuel_F",
+    "O_T_Truck_03_fuel_ghex_F",
+    "O_Truck_03_fuel_F",
+    "RHS_Ural_Fuel_VDV_01"
 ];
 
 // Classnames of boats, so they can be built on water.
 boats_names = [
 
-    // Marine WDL
+    // Base Game
     "EF_B_SDV_01_MJTF_Wdl",
     "EF_B_Boat_Transport_01_MJTF_Wdl",
     "I_C_Boat_Transport_02_F",
@@ -970,6 +806,9 @@ boats_names = [
     "EF_B_LCC_MJTF_Wdl",
     "EF_B_LCC_SideLoad_MJTF_Wdl",
 
+    // RHS USAF
+    "rhsusf_mkvsoc",
+
     "B_Boat_Armed_01_minigun_F",
     "B_Boat_Transport_01_F",
     "B_SDV_01_F",
@@ -978,36 +817,37 @@ boats_names = [
     "O_Boat_Armed_01_hmg_F",
     "O_Boat_Transport_01_F",
     "O_T_Boat_Armed_01_hmg_F",
-    "O_T_Boat_Transport_01_F",
-    "CUP_B_MK10_GB",
-    "CUP_B_RHIB_USMC",
-    "CUP_B_RHIB2Turret_USMC",
-    "CUP_B_LCU1600_USMC",
-    "CUP_O_LCVP_SLA",
-    "CUP_O_LCVP_VIV_SLA",
-    "CUP_O_PBX_SLA",
-    "rhsusf_mkvsoc",
-    "sfp_gruppbat",
-    "sfp_rbb_norrkoping",
-    "sfp_strb90_rws",
-    "sfp_strb90",
-    "uns_PBR_M10",
-    "uns_pbr_mk18",
-    "uns_pbr",
-    "UNS_Zodiac_W"
+    "O_T_Boat_Transport_01_F"
 ];
 
 // Classnames of artillery vehicles, which should be added to the support module
 // (Needed/Favorized as BIS_SUPP_eligible_Artillery from the support module isn't broadcasted over the network and may hold unwanted vehicles)
 KP_liberation_suppMod_artyVeh = [
 
-    // Marine WDL
+    // Base Game
     "B_W_APC_Wheeled_01_mortar_lxWS",
     "B_W_MBT_01_mlrs_F",
     "B_W_MBT_01_arty_F",
     "Aegis_B_W_TwinMortar_RF",
     "Aegis_B_W_CommandoMortar_RF",
-    
+
+    // RHS USAF
+    "RHS_M119_D",
+    "RHS_M119_WD",
+    "RHS_M252_D",
+    "RHS_M252_USMC_D",
+    "RHS_M252_USMC_WD",
+    "RHS_M252_WD",
+    "rhsusf_m109_usarmy",
+    "rhsusf_m109d_usarmy",
+    "rhsusf_M142_usarmy_D",
+    "rhsusf_M142_usarmy_WD",
+    "rhsusf_M142_usmc_WD",
+
+    // UK 3CB Factions
+    "UK3CB_B_M270_MLRS_HE_DES", 
+    "UK3CB_B_M270_MLRS_Cluster_DES",
+
     "B_G_Mortar_01_F",
     "B_MBT_01_arty_F",
     "B_MBT_01_mlrs_F",
@@ -1015,65 +855,7 @@ KP_liberation_suppMod_artyVeh = [
     "B_Ship_Gun_01_F",
     "B_T_MBT_01_arty_F",
     "B_T_MBT_01_mlrs_F",
-    "B_T_Mortar_01_F",
-    "CUP_B_2b14_82mm_ACR",
-    "CUP_B_2b14_82mm_CDF",
-    "CUP_B_BM21_CDF",
-    "CUP_B_D30_CDF",
-    "CUP_B_L16A2_BAF_DDPM",
-    "CUP_B_L16A2_BAF_MPT",
-    "CUP_B_L16A2_BAF_WDL",
-    "CUP_B_M1129_MC_MK19_Desert_Slat",
-    "CUP_B_M1129_MC_MK19_Desert",
-    "CUP_B_M1129_MC_MK19_Woodland_Slat",
-    "CUP_B_M1129_MC_MK19_Woodland",
-    "CUP_B_M119_US",
-    "CUP_B_M119_USMC",
-    "CUP_B_M252_US",
-    "CUP_B_M252_USMC",
-    "CUP_B_M270_DPICM_BAF_DES",
-    "CUP_B_M270_DPICM_BAF_WOOD",
-    "CUP_B_M270_DPICM_USA",
-    "CUP_B_M270_DPICM_USMC",
-    "CUP_B_M270_HE_BAF_DES",
-    "CUP_B_M270_HE_BAF_WOOD",
-    "CUP_B_M270_HE_USA",
-    "CUP_B_M270_HE_USMC",
-    "CUP_B_RM70_CZ",
-    "CUP_I_2b14_82mm_TK_GUE",
-    "CUP_I_D30_TK_GUE",
-    "CUP_I_Hilux_armored_MLRS_TK",
-    "CUP_I_Hilux_armored_podnos_TK",
-    "CUP_I_Hilux_armored_UB32_TK",
-    "CUP_I_Hilux_MLRS_TK",
-    "CUP_I_Hilux_podnos_TK",
-    "CUP_I_Hilux_UB32_TK",
-    "CUP_I_M119_RACS",
-    "CUP_I_M252_RACS",
-    "CUP_I_M270_DPICM_AAF",
-    "CUP_I_M270_DPICM_RACS",
-    "CUP_I_M270_HE_AAF",
-    "CUP_I_M270_HE_RACS",
-    "CUP_O_2b14_82mm_ChDKZ",
-    "CUP_O_2b14_82mm_RU",
-    "CUP_O_2b14_82mm_SLA",
-    "CUP_O_2b14_82mm_TK_INS",
-    "CUP_O_2b14_82mm_TK",
-    "CUP_O_BM21_CHDKZ",
-    "CUP_O_BM21_RU",
-    "CUP_O_BM21_SLA",
-    "CUP_O_BM21_TKA",
-    "CUP_O_D30_ChDKZ",
-    "CUP_O_D30_RU",
-    "CUP_O_D30_SLA",
-    "CUP_O_D30_TK_INS",
-    "CUP_O_D30_TK",
-    "CUP_O_Hilux_armored_MLRS_TK_INS",
-    "CUP_O_Hilux_armored_podnos_TK_INS",
-    "CUP_O_Hilux_armored_UB32_TK_INS",
-    "CUP_O_Hilux_MLRS_TK_INS",
-    "CUP_O_Hilux_podnos_TK_INS",
-    "CUP_O_Hilux_UB32_TK_INS",
+    "B_T_Mortar_01_F",,
     "I_E_Mortar_01_F",
     "I_E_Truck_02_MRL_F",
     "I_G_Mortar_01_F",
@@ -1095,37 +877,7 @@ KP_liberation_suppMod_artyVeh = [
     "RHS_BM21_VV_01",
     "rhs_D30_msv",
     "rhs_D30_vdv",
-    "rhs_D30_vmf",
-    "RHS_M119_D",
-    "RHS_M119_WD",
-    "RHS_M252_D",
-    "RHS_M252_USMC_D",
-    "RHS_M252_USMC_WD",
-    "RHS_M252_WD",
-    "rhsusf_m109_usarmy",
-    "rhsusf_m109d_usarmy",
-    "rhsusf_M142_usarmy_D",
-    "rhsusf_M142_usarmy_WD",
-    "rhsusf_M142_usmc_WD",
-    "Uns_D20_artillery",
-    "Uns_D30_artillery",
-    "uns_M1_81mm_mortar_arty",
-    "uns_M1_81mm_mortar_pvp",
-    "uns_M1_81mm_mortar",
-    "Uns_M102_artillery",
-    "uns_m107sp",
-    "uns_m110sp",
-    "uns_M113_M30_HQ",
-    "uns_M113_M30",
-    "Uns_M114_artillery",
-    "uns_m1941_82mm_mortarNVA_arty",
-    "uns_m1941_82mm_mortarNVA_pvp",
-    "uns_m1941_82mm_mortarNVA",
-    "uns_m1941_82mm_mortarVC",
-    "uns_M2_60mm_mortar_pvp",
-    "uns_M2_60mm_mortar",
-    "uns_M30_107mm_mortar",
-    "uns_Type55_mortar"
+    "rhs_D30_vmf"
 ];
 
 // Objects which are spawned as intel objects for pickup
@@ -1137,7 +889,6 @@ KPLIB_intelObjectClasses = [
     "Leaflet_05_New_F",
     "Leaflet_05_Stack_F",
     "Leaflet_05_F",
-    "Aegis_Land_Portable_Radio_01_olive_F",
     "Land_Tablet_02_F",
     "Land_PortableServer_01_olive_F",
     "Land_MultiScreenComputer_01_olive_F",
