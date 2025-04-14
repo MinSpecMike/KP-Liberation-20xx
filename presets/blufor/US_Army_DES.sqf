@@ -144,7 +144,8 @@ static_vehicles = [
     ["RHS_Stinger_AA_pod_D",200,200,0],                                        // Stinger
     ["RHS_M252_D",250,250,0],                                                  // M252
     ["B_AAA_System_01_F",500,500,0],                                           // Praetorian 
-    ["B_SAM_System_03_F",750,750,0]                                            // Patriot
+    ["B_SAM_System_03_F",750,750,0],                                           // Patriot
+    ["RHS_M119_D",500,500,0]                                                  // M119A2
 ];
 
 buildings = [
