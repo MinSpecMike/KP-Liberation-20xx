@@ -624,6 +624,21 @@ KP_liberation_suppMod_artyVeh = [
     "rhsusf_M142_usarmy_WD",
     "rhsusf_M142_usmc_WD",
 
+    // RHS AFRF
+    "rhs_2b14_82mm_msv",
+    "rhs_2b14_82mm_vdv",
+    "rhs_2b14_82mm_vmf",
+    "rhs_2s1_tv",
+    "rhs_2s1_vmf",
+    "rhs_2s3_tv",
+    "RHS_BM21_MSV_01",
+    "RHS_BM21_VDV_01",
+    "RHS_BM21_VMF_01",
+    "RHS_BM21_VV_01",
+    "rhs_D30_msv",
+    "rhs_D30_vdv",
+    "rhs_D30_vmf",
+
     // UK 3CB Factions
     "UK3CB_B_M270_MLRS_HE_DES", 
     "UK3CB_B_M270_MLRS_Cluster_DES",
@@ -644,20 +659,7 @@ KP_liberation_suppMod_artyVeh = [
     "O_G_Mortar_01_F",
     "O_MBT_02_arty_F",
     "O_Mortar_01_F",
-    "O_T_MBT_02_arty_ghex_F",
-    "rhs_2b14_82mm_msv",
-    "rhs_2b14_82mm_vdv",
-    "rhs_2b14_82mm_vmf",
-    "rhs_2s1_tv",
-    "rhs_2s1_vmf",
-    "rhs_2s3_tv",
-    "RHS_BM21_MSV_01",
-    "RHS_BM21_VDV_01",
-    "RHS_BM21_VMF_01",
-    "RHS_BM21_VV_01",
-    "rhs_D30_msv",
-    "rhs_D30_vdv",
-    "rhs_D30_vmf"
+    "O_T_MBT_02_arty_ghex_F"
 ];
 
 // Objects which are spawned as intel objects for pickup
