@@ -650,7 +650,7 @@ KP_liberation_suppMod_artyVeh = [
     "B_Ship_Gun_01_F",
     "B_T_MBT_01_arty_F",
     "B_T_MBT_01_mlrs_F",
-    "B_T_Mortar_01_F",,
+    "B_T_Mortar_01_F",
     "I_E_Mortar_01_F",
     "I_E_Truck_02_MRL_F",
     "I_G_Mortar_01_F",
