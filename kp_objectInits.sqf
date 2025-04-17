@@ -30,6 +30,12 @@ KPLIB_objectInits = [
         {_this setFlagTexture "res\Liberation_Flag.paa";}
     ],
 
+    // Set Billboard Logo on Billboard
+    [
+        ["Land_Billboard_F"],
+        {_this setObjectTextureGlobal [0, "res\Liberation_Lythium_Modern_Billboard.paa"];}
+    ],
+    
     // Add helipads to zeus, as they can't be recycled after built
     [
         ["Helipad_base_F", "LAND_uns_Heli_pad", "Helipad", "LAND_uns_evac_pad", "LAND_uns_Heli_H"],
