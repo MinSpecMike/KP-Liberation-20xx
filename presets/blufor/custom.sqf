@@ -21,7 +21,8 @@ Respawn_truck_typename = "rhsusf_M1083A1P2_B_M2_D_fmtv_usarmy";         // This 
 huron_typename = "RHS_CH_47F_10";                                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "rhsusf_army_ocp_combatcrewman";                    // This defines the crew for vehicles.
 pilot_classname = "rhsusf_army_ocp_ah64_pilot";                         // This defines the pilot for helicopters.
-KP_liberation_little_bird_classname = "RHS_MELB_MH6M";                  // These are the little birds which spawn on the Freedom or at Chimera base. KP_liberation_MRAP_classname = "rhsusf_m1240a1_m2_uik_usarmy_d";        // These are MRAPs that spawn on the Ship to be loaded into the LCAC.
+KP_liberation_little_bird_classname = "RHS_MELB_MH6M";                  // These are the little birds which spawn on the Freedom or at Chimera base.
+KP_liberation_MRAP_classname = "rhsusf_m1240a1_m2_uik_usarmy_d";        // These are MRAPs that spawn on the Ship to be loaded into the LCAC.
 KP_liberation_boat_classname = "I_C_Boat_Transport_02_F";               // These are the boats which spawn at the stern of the Freedom.
 KP_liberation_MarineBoat_classname = "rhsusf_mkvsoc";	                // These are armed boats that spawns as a 3rd transport option.
 KP_liberation_truck_classname = "rhsusf_M977A4_BKIT_usarmy_d";          // These are the trucks which are used in the logistic convoy system.
@@ -143,7 +144,8 @@ static_vehicles = [
     ["RHS_Stinger_AA_pod_D",200,200,0],                                        // Stinger
     ["RHS_M252_D",250,250,0],                                                  // M252
     ["B_AAA_System_01_F",500,500,0],                                           // Praetorian 
-    ["B_SAM_System_03_F",750,750,0]                                            // Patriot
+    ["B_SAM_System_03_F",750,750,0],                                           // Patriot
+    ["RHS_M119_D",500,500,0]                                                   // M119A2
 ];
 
 buildings = [
@@ -382,5 +384,6 @@ elite_vehicles = [
     "FIR_F15EX_Blank", 
     "FIR_F22_Blank", 
     "B_AAA_System_01_F", 
-    "B_SAM_System_03_F"
+    "B_SAM_System_03_F",
+    "RHS_M119_D"
 ];
