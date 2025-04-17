@@ -221,6 +221,7 @@ buildings = [
     ["Land_BagFence_Short_F",0,0,0],
     ["Land_Medevac_HQ_V1_F",0,0,0],
     ["Land_Medevac_house_V1_F",0,0,0],
+    ["Land_Billboard_F",0,0,0],
     ["Land_HelipadCircle_F",0,0,0],
     ["Land_ClutterCutter_large_F",0,0,0]
 ];
