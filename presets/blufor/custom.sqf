@@ -21,10 +21,9 @@ Respawn_truck_typename = "rhsusf_M1083A1P2_B_M2_D_fmtv_usarmy";         // This 
 huron_typename = "RHS_CH_47F_10";                                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "rhsusf_army_ocp_combatcrewman";                    // This defines the crew for vehicles.
 pilot_classname = "rhsusf_army_ocp_ah64_pilot";                         // This defines the pilot for helicopters.
-KP_liberation_little_bird_classname = "RHS_MELB_MH6M";                  // These are the little birds which spawn on the Freedom or at Chimera base.
-// KP_liberation_MRAP_classname = "rhsusf_m1240a1_m2_uik_usarmy_d";        // These are MRAPs that spawn on the Ship to be loaded into the LCAC.
+KP_liberation_little_bird_classname = "RHS_MELB_MH6M";                  // These are the little birds which spawn on the Freedom or at Chimera base. KP_liberation_MRAP_classname = "rhsusf_m1240a1_m2_uik_usarmy_d";        // These are MRAPs that spawn on the Ship to be loaded into the LCAC.
 KP_liberation_boat_classname = "I_C_Boat_Transport_02_F";               // These are the boats which spawn at the stern of the Freedom.
-// KP_liberation_MarineBoat_classname = "rhsusf_mkvsoc";	                // These are armed boats that spawns as a 3rd transport option.
+KP_liberation_MarineBoat_classname = "rhsusf_mkvsoc";	                // These are armed boats that spawns as a 3rd transport option.
 KP_liberation_truck_classname = "rhsusf_M977A4_BKIT_usarmy_d";          // These are the trucks which are used in the logistic convoy system.
 KP_liberation_small_storage_building = "ContainmentArea_02_forest_F";   // A small storage area for resources.
 KP_liberation_large_storage_building = "ContainmentArea_01_forest_F";   // A large storage area for resources.
