@@ -145,7 +145,7 @@ static_vehicles = [
     ["RHS_M252_D",250,250,0],                                                  // M252
     ["B_AAA_System_01_F",500,500,0],                                           // Praetorian 
     ["B_SAM_System_03_F",750,750,0],                                           // Patriot
-    ["RHS_M119_D",500,500,0]                                                  // M119A2
+    ["RHS_M119_D",500,500,0]                                                   // M119A2
 ];
 
 buildings = [
@@ -384,5 +384,6 @@ elite_vehicles = [
     "FIR_F15EX_Blank", 
     "FIR_F22_Blank", 
     "B_AAA_System_01_F", 
-    "B_SAM_System_03_F"
+    "B_SAM_System_03_F",
+    "RHS_M119_D"
 ];
