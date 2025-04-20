@@ -74,24 +74,30 @@ infantry_units = [
 
 light_vehicles = [
     ["rhsusf_mrzr4_d",75,0,75],                                                // MRZR4
-    ["rhsusf_m1240a1_m240_uik_usarmy_d",100,50,100],                           // MRAP (M240)
-    ["rhsusf_m1240a1_m2_uik_usarmy_d",100,100,100],                            // MRAP (M2)
-    ["rhsusf_m1240a1_mk19_uik_usarmy_d",100,150,100],                          // MRAP (Mk19)
-    ["rhsusf_m1240a1_m2crows_usarmy_d",100,175,100],                           // MRAP (CROWS/M2)
-    ["rhsusf_m1240a1_mk19crows_usarmy_d",100,175,100],                         // MRAP (CROWS/MK19)
-    ["rhsusf_M1078A1P2_B_D_fmtv_usarmy",150,0,50],                             // FMTV
-    ["rhsusf_M1078A1P2_B_D_flatbed_fmtv_usarmy",150,0,50],                     // FMTV (Flatbed)
-    ["rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy",150,100,50],                        // FMTV (M2)
-    ["rhsusf_M1078A1P2_B_M2_D_flatbed_fmtv_usarmy",150,100,100],               // FMTV (Flatbed/M2)
-    ["rhsusf_M1083A1P2_B_D_fmtv_usarmy",150,0,100],                            // FMTV 
-    ["rhsusf_M1083A1P2_B_D_flatbed_fmtv_usarmy",150,0,100],                    // FMTV (Flatbed)
-    ["rhsusf_M1083A1P2_B_M2_D_flatbed_fmtv_usarmy",150,100,100],               // FMTV (Flatbed/M2)
-    ["rhsusf_M1084A1P2_B_D_fmtv_usarmy",150,0,100],                            // FMTV
+    ["rhsusf_m1151_m240_v2_usarmy_d",100,50,100],                              // M1151A1 (M240)
+    ["rhsusf_m1151_m2_v2_usarmy_d",100,100,100],                               // M1151A1 (M2)
+    ["rhsusf_m1151_mk19_v2_usarmy_d",100,150,100],                             // M1151A1 (MK19)
+    ["rhsusf_m1151_m2crows_usarmy_d",100,175,100],                             // M1151A1 (CROWS/M2)
+    ["rhsusf_m1151_mk19crows_usarmy_d",100,175,100],                           // M1151A1 (CROWS/MK19)
+    ["rhsusf_m1240a1_m240_uik_usarmy_d",150,50,150],                           // MRAP (M240)
+    ["rhsusf_m1240a1_m2_uik_usarmy_d",150,100,150],                            // MRAP (M2)
+    ["rhsusf_m1240a1_mk19_uik_usarmy_d",150,150,150],                          // MRAP (Mk19)
+    ["rhsusf_m1240a1_m2crows_usarmy_d",150,175,150],                           // MRAP (CROWS/M2)
+    ["rhsusf_m1240a1_mk19crows_usarmy_d",150,175,150],                         // MRAP (CROWS/MK19)
+    ["rhsusf_M1078A1P2_B_D_fmtv_usarmy",150,0,150],                            // FMTV
+    ["rhsusf_M1078A1P2_B_D_flatbed_fmtv_usarmy",150,0,150],                    // FMTV (Flatbed)
+    ["rhsusf_M1078A1P2_B_M2_D_fmtv_usarmy",150,100,150],                       // FMTV (M2)
+    ["rhsusf_M1078A1P2_B_M2_D_flatbed_fmtv_usarmy",150,100,150],               // FMTV (Flatbed/M2)
+    ["rhsusf_M1083A1P2_B_D_fmtv_usarmy",150,0,150],                            // FMTV 
+    ["rhsusf_M1083A1P2_B_D_flatbed_fmtv_usarmy",150,0,150],                    // FMTV (Flatbed)
+    ["rhsusf_M1083A1P2_B_M2_D_flatbed_fmtv_usarmy",150,100,150],               // FMTV (Flatbed/M2)
+    ["rhsusf_M1084A1P2_B_D_fmtv_usarmy",150,0,150],                            // FMTV
     ["rhsusf_M1084A1P2_B_M2_D_fmtv_usarmy",150,100,150],                       // FMTV (M2)
     ["rhsusf_M977A4_BKIT_usarmy_d",175,0,175],                                 // HEMTT 
 	["rhsusf_M977A4_BKIT_M2_usarmy_d",175,100,175],                            // HEMTT (M2) 
     ["rhsusf_stryker_m1126_m2_d",200,150,250],                                 // STRYKER (CROWS/M2)
     ["rhsusf_stryker_m1126_mk19_d",200,175,250],                               // STRYKER (CROWS/MK19)
+    ["rhsusf_stryker_m1132_m2_d",225,150,250],                                 // STRYKER (CROWS/M2/ENGINEER)
 	["rhsusf_stryker_m1134_d",250,225,250],                                    // STRYKER (ATGM)
     ["m1128_mgs_b",275,275,275]                                                // STRYKER MGS
 ];
@@ -360,6 +366,8 @@ blufor_squad_para = [
 elite_vehicles = [
     "rhsusf_m1240a1_m2crows_usarmy_d",
     "rhsusf_m1240a1_mk19crows_usarmy_d",
+    "rhsusf_m1151_m2crows_usarmy_d",
+    "rhsusf_m1151_mk19crows_usarmy_d",
     "rhsusf_stryker_m1134_d",
     "m1128_mgs_b",
     "RHS_M2A3_BUSKI",
