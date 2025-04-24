@@ -16,7 +16,7 @@
 FOB_typename = "Land_Cargo_HQ_V1_F";                                    // This is the main FOB HQ building.
 FOB_box_typename = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
 FOB_truck_typename = "rhsusf_M1078A1P2_B_D_CP_fmtv_usarmy";             // This is the FOB as a vehicle.
-Arsenal_typename = "C_IDAP_supplyCrate_F";                              // This is the virtual arsenal as portable supply crates.
+Arsenal_typename = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
 Respawn_truck_typename = "rhsusf_M1083A1P2_B_M2_D_fmtv_usarmy";         // This is the mobile respawn (and medical) truck.
 huron_typename = "RHS_CH_47F_10";                                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 crewman_classname = "rhsusf_army_ocp_combatcrewman";                    // This defines the crew for vehicles.
@@ -249,7 +249,7 @@ support_vehicles = [
     ["kat_pharmaMedicalCrate",0,0,0],
     ["kat_surgerySupplyCrate",0,0,0],
     ["FIR_Baseplate",0,0,0],
-    ["ACE_Box_82mm_Mo_HE",0,25,0],
+    ["ACE_Box_82mm_Mo_HE",0,0,0],
     ["ACE_Box_82mm_Mo_Smoke",0,0,0],
     ["ACE_Box_82mm_Mo_Illum",0,0,0],
     ["ACE_Wheel",0,0,0],
@@ -268,6 +268,7 @@ support_vehicles = [
     ["FL_parts_engineturbinelarge",0,0,0],
     ["FL_parts_engineturbinesmall",0,0,0],
     ["FL_parts_turretdrive",0,0,0],
+    ["C_IDAP_supplyCrate_F",0,0,0],
     ["StorageBladder_01_fuel_sand_F",300,0,300],                                                // Fuel Bladder
     ["rhsusf_M977A4_REPAIR_BKIT_usarmy_d",300,0,300],                                           // HEMTT Repair
     ["rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d",300,100,300],                                      // HEMTT Repair (M2)
