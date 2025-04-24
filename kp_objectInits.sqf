@@ -35,6 +35,12 @@ KPLIB_objectInits = [
         ["Land_Billboard_F"],
         {_this setObjectTextureGlobal [0, "res\Liberation_Lythium_Modern_Billboard.paa"];}
     ],
+
+    // Add Arsenal to Vehicle Arsenal Box
+    [
+        ["C_IDAP_supplyCrate_F"],
+        {[this, true] call ace_arsenal_fnc_initBox;}
+    ],
     
     // Add helipads to zeus, as they can't be recycled after built
     [
