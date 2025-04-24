@@ -39,7 +39,7 @@ KPLIB_objectInits = [
     // Add Arsenal to Vehicle Arsenal Box
     [
         ["C_IDAP_supplyCrate_F"],
-        {[this, true] call ace_arsenal_fnc_initBox;}
+        {[_this, true] call ace_arsenal_fnc_initBox;}
     ],
     
     // Add helipads to zeus, as they can't be recycled after built
